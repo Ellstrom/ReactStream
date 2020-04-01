@@ -29,8 +29,9 @@ code {
 
 .textOnImage{
     position: absolute;
+    width: 300px;
     top: 35%;
-    left: 95%;
+    text-align: center;
     color: white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
