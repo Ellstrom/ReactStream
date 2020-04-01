@@ -27,6 +27,14 @@ code {
      */
 }
 
+.textOnImage{
+    position: absolute;
+    top: 35%;
+    left: 95%;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
 /*
 
 * {

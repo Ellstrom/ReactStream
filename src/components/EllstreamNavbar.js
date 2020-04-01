@@ -7,14 +7,14 @@ const EllstreamNavbar = () => (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link href="#mirage">Mirage</Nav.Link>
-                <Nav.Link href="#nuke">Nuke</Nav.Link>
-                <Nav.Link href="#dust2">Dust2</Nav.Link>
-                <Nav.Link href="#inferno">Inferno</Nav.Link>
-                <Nav.Link href="#vertigo">Vertigo</Nav.Link>
-                <Nav.Link href="#cache">Cache</Nav.Link>
-                <Nav.Link href="#overpass">Overpass</Nav.Link>
-                <Nav.Link href="#train">Train</Nav.Link>
+                <Nav.Link href="#Mirage">Mirage</Nav.Link>
+                <Nav.Link href="#Nuke">Nuke</Nav.Link>
+                <Nav.Link href="#Dust2">Dust2</Nav.Link>
+                <Nav.Link href="#Inferno">Inferno</Nav.Link>
+                <Nav.Link href="#Vertigo">Vertigo</Nav.Link>
+                <Nav.Link href="#Cache">Cache</Nav.Link>
+                <Nav.Link href="#Overpass">Overpass</Nav.Link>
+                <Nav.Link href="#Train">Train</Nav.Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>

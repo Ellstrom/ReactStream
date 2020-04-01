@@ -17,16 +17,16 @@ function App() {
         <div className="App">
             <EllstreamNavbar/>
             <Row>
-                <Col xs="auto"><EllstreamImage imageSrc={MirageMergedSrc} imageAlt="de_mirage map image" linkClassName="#mirage"/></Col>
-                <Col xs="auto"><EllstreamImage imageSrc={NukeMergedSrc} imageAlt="de_nuke map image" linkClassName="#nuke"/></Col>
-                <Col xs="auto"><EllstreamImage imageSrc={Dust2MergedSrc} imageAlt="de_dust2 map image" linkClassName="#dust2"/></Col>
-                <Col xs="auto"><EllstreamImage imageSrc={InfernoMergedSrc} imageAlt="de_inferno map image" linkClassName="#inferno"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={MirageMergedSrc} mapName="Mirage"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={NukeMergedSrc} mapName="Nuke"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={Dust2MergedSrc} mapName="Dust2"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={InfernoMergedSrc} mapName="Inferno"/></Col>
             </Row>
             <Row>
-                <Col xs="auto"><EllstreamImage imageSrc={VertigoMergedSrc} imageAlt="de_vertigo map image" linkClassName="#vertigo"/></Col>
-                <Col xs="auto"><EllstreamImage imageSrc={CacheMergedSrc} imageAlt="de_cache map image" linkClassName="#cache"/></Col>
-                <Col xs="auto"><EllstreamImage imageSrc={OverpassMergedSrc} imageAlt="de_overpass map image" linkClassName="#overpass"/></Col>
-                <Col xs="auto"><EllstreamImage imageSrc={TrainMergedSrc} imageAlt="de_train map image" linkClassName="#train"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={VertigoMergedSrc} mapName="Vertigo"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={CacheMergedSrc} mapName="Cache"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={OverpassMergedSrc} mapName="Overpass"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={TrainMergedSrc} mapName="Train"/></Col>
             </Row>
             <p id="cache">Cache</p>
         </div>
