@@ -1,11 +1,34 @@
 import React from 'react';
 import './App.css';
+import { Row, Col } from "react-bootstrap";
 import EllstreamNavbar from "./components/EllstreamNavbar";
+import EllstreamImage from "./components/EllstreamImage";
+import MirageMergedSrc from "./images/mirage/mirage.jpg";
+import NukeMergedSrc from "./images/nuke/nuke.jpg";
+import Dust2MergedSrc from "./images/dust2/dust2.jpg";
+import InfernoMergedSrc from "./images/inferno/inferno.jpg";
+import VertigoMergedSrc from "./images/vertigo/vertigo.jpg";
+import CacheMergedSrc from "./images/cache/cache.jpg";
+import OverpassMergedSrc from "./images/overpass/overpass.jpg";
+import TrainMergedSrc from "./images/train/train.jpg";
 
 function App() {
     return (
         <div className="App">
             <EllstreamNavbar/>
+            <Row>
+                <Col xs="auto"><EllstreamImage imageSrc={MirageMergedSrc} imageAlt="de_mirage map image" linkClassName="#mirage"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={NukeMergedSrc} imageAlt="de_nuke map image" linkClassName="#nuke"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={Dust2MergedSrc} imageAlt="de_dust2 map image" linkClassName="#dust2"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={InfernoMergedSrc} imageAlt="de_inferno map image" linkClassName="#inferno"/></Col>
+            </Row>
+            <Row>
+                <Col xs="auto"><EllstreamImage imageSrc={VertigoMergedSrc} imageAlt="de_vertigo map image" linkClassName="#vertigo"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={CacheMergedSrc} imageAlt="de_cache map image" linkClassName="#cache"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={OverpassMergedSrc} imageAlt="de_overpass map image" linkClassName="#overpass"/></Col>
+                <Col xs="auto"><EllstreamImage imageSrc={TrainMergedSrc} imageAlt="de_train map image" linkClassName="#train"/></Col>
+            </Row>
+            <p id="cache">Cache</p>
         </div>
     );
 }
