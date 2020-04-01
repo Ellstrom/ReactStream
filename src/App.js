@@ -16,19 +16,28 @@ function App() {
     return (
         <div className="App">
             <EllstreamNavbar/>
+            <br/><br/>
+            <Row>
+                <Col>
+                    <h1 class="titleText">Select map</h1>
+                </Col>
+            </Row>
+            <br/>
             <Row>
                 <Col xs="auto"><EllstreamImage imageSrc={MirageMergedSrc} mapName="Mirage"/></Col>
                 <Col xs="auto"><EllstreamImage imageSrc={NukeMergedSrc} mapName="Nuke"/></Col>
                 <Col xs="auto"><EllstreamImage imageSrc={Dust2MergedSrc} mapName="Dust2"/></Col>
                 <Col xs="auto"><EllstreamImage imageSrc={InfernoMergedSrc} mapName="Inferno"/></Col>
             </Row>
+            <br/>
             <Row>
                 <Col xs="auto"><EllstreamImage imageSrc={VertigoMergedSrc} mapName="Vertigo"/></Col>
                 <Col xs="auto"><EllstreamImage imageSrc={CacheMergedSrc} mapName="Cache"/></Col>
                 <Col xs="auto"><EllstreamImage imageSrc={OverpassMergedSrc} mapName="Overpass"/></Col>
                 <Col xs="auto"><EllstreamImage imageSrc={TrainMergedSrc} mapName="Train"/></Col>
             </Row>
-            <p id="cache">Cache</p>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <h2 class="mapTitleText" id="Cache">Cache</h2>
         </div>
     );
 }
