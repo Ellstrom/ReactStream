@@ -5,7 +5,7 @@ const EllstreamImage = (props) => {
     return (
         <Container>
             <Row>
-                <Col xs={6} md={4}>
+                <Col>
                     <a href={"#"+props.mapName}>
                         <Image
                             src={props.imageSrc}
