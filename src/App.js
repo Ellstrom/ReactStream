@@ -36,7 +36,7 @@ function App() {
                 <Col xs="auto"><EllstreamImage imageSrc={OverpassMergedSrc} mapName="Overpass"/></Col>
                 <Col xs="auto"><EllstreamImage imageSrc={TrainMergedSrc} mapName="Train"/></Col>
             </Row>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 class="mapTitleText" id="Cache">Cache</h2>
         </div>
     );
