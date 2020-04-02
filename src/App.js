@@ -14,7 +14,7 @@ import TrainMergedSrc from "./images/train/train.jpg";
 
 function App() {
     return (
-        <div className="App">
+        <div className="App" class="removeHorizontalScroll">
             <br/><br/><br/><br/><br/><br/>
             <div class="sticky">
                 <EllstreamNavbar/>
