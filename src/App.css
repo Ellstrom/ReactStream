@@ -12,6 +12,13 @@
     width: 300px;
 }
 
+.imageDiv{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    /* border: 3px solid green; */ /*Useful for debugging*/
+}
+
 .textOnImage{
     position: absolute;
     width: 300px;
@@ -19,4 +26,12 @@
     text-align: center;
     color: white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
