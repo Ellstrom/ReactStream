@@ -1,6 +1,6 @@
 import React from 'react'
 import { Table } from "react-bootstrap";
-import { FaAngleDown } from 'react-icons/fa';
+import { FaAngleDown, FaAngleUp} from 'react-icons/fa';
 import YoutubeComponent from "./YoutubeComponent";
 
 class EllstreamTable extends React.Component {
@@ -116,12 +116,10 @@ class EllstreamTable extends React.Component {
         }
     }
 
+    //Prevent parent row from being clicked when child row is clicked
     disablePropagation(event) {
         event.stopPropagation()
     }
-
-
-
 
     render() {
         return (
@@ -130,18 +128,26 @@ class EllstreamTable extends React.Component {
                     <tbody>
                         <tr onClick={() => this.handleRowClick(1)}>
                             <td>
-                                <FaAngleDown size='1.5rem'/>
+                                {this.state.data_executes.isExpanded ? (
+                                    <FaAngleUp size='1.5rem'/>
+                                ) : (
+                                    <FaAngleDown size='1.5rem'/>
+                                )}
                                 {this.state.data_executes.name}
-                                {this.state.data_executes.isExpanded === true &&
+                                {this.state.data_executes.isExpanded &&
                                     <div onClick={this.disablePropagation}>
                                         <table>
                                             <tbody>
                                             <tr onClick={() => this.handleRowClick(11)}>
                                                 <td>
-                                                    <FaAngleDown size='1.5rem'/>
+                                                    {this.state.data_execute_a.isExpanded ? (
+                                                        <FaAngleUp size='1.5rem'/>
+                                                    ) : (
+                                                        <FaAngleDown size='1.5rem'/>
+                                                    )}
                                                     {this.state.data_execute_a.name}
                                                 </td>
-                                                {this.state.data_execute_a.isExpanded === true &&
+                                                {this.state.data_execute_a.isExpanded &&
                                                 <td>
                                                     <YoutubeComponent/>
                                                 </td>
@@ -149,10 +155,14 @@ class EllstreamTable extends React.Component {
                                             </tr>
                                             <tr onClick={() => this.handleRowClick(12)}>
                                                 <td>
-                                                    <FaAngleDown size='1.5rem'/>
+                                                    {this.state.data_execute_b.isExpanded ? (
+                                                        <FaAngleUp size='1.5rem'/>
+                                                    ) : (
+                                                        <FaAngleDown size='1.5rem'/>
+                                                    )}
                                                     {this.state.data_execute_b.name}
                                                 </td>
-                                                {this.state.data_execute_b.isExpanded === true &&
+                                                {this.state.data_execute_b.isExpanded &&
                                                 <td>
                                                     <YoutubeComponent/>
                                                 </td>
@@ -166,9 +176,13 @@ class EllstreamTable extends React.Component {
                         </tr>
                         <tr onClick={() => this.handleRowClick(2)}>
                             <td>
-                                <FaAngleDown size='1.5rem'/>
+                                {this.state.data_t.isExpanded ? (
+                                    <FaAngleUp size='1.5rem'/>
+                                ) : (
+                                    <FaAngleDown size='1.5rem'/>
+                                )}
                                 {this.state.data_t.name}
-                                {this.state.data_t.isExpanded === true &&
+                                {this.state.data_t.isExpanded &&
                                 <div onClick={this.disablePropagation}>
                                     <td>
                                         <YoutubeComponent/>
@@ -179,9 +193,13 @@ class EllstreamTable extends React.Component {
                         </tr>
                         <tr onClick={() => this.handleRowClick(3)}>
                             <td>
-                                <FaAngleDown size='1.5rem'/>
+                                {this.state.data_t.isExpanded ? (
+                                    <FaAngleUp size='1.5rem'/>
+                                ) : (
+                                    <FaAngleDown size='1.5rem'/>
+                                )}
                                 {this.state.data_ct.name}
-                                {this.state.data_ct.isExpanded === true &&
+                                {this.state.data_ct.isExpanded &&
                                 <div onClick={this.disablePropagation}>
                                     <td>
                                         <YoutubeComponent/>
