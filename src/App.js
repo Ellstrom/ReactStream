@@ -17,6 +17,18 @@ const mirageTableProps = {
     executes : {
         execute_1 : {
             name: "A",
+            videoIds : {
+                videoId1: "-8pgTeBCms4",
+                videoId2: "-8pgTeBCms4",
+                videoId3: "-8pgTeBCms4",
+                videoId4: "-8pgTeBCms4",
+                videoId5: "-8pgTeBCms4",
+                videoId6: "-8pgTeBCms4",
+                videoId7: "-8pgTeBCms4",
+                videoId8: "hidden",
+                videoId9: "hidden",
+                videoId10: "hidden"
+            },
         },
         execute_2 : {
             name: "B",
@@ -30,7 +42,6 @@ const mirageTableProps = {
         execute_5 : {
             name: "hidden",
         },
-
     },
 };
 
