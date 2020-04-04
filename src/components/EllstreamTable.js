@@ -19,7 +19,7 @@ class EllstreamTable extends React.Component {
             },
             data_ct : {
                 id : 3,
-                name : "T",
+                name : "CT",
                 isExpanded : false
             },
             data_execute_a : {
@@ -165,10 +165,30 @@ class EllstreamTable extends React.Component {
                             </td>
                         </tr>
                         <tr onClick={() => this.handleRowClick(2)}>
-
+                            <td>
+                                <FaAngleDown size='1.5rem'/>
+                                {this.state.data_t.name}
+                                {this.state.data_t.isExpanded === true &&
+                                <div onClick={this.disablePropagation}>
+                                    <td>
+                                        <YoutubeComponent/>
+                                    </td>
+                                </div>
+                                }
+                            </td>
                         </tr>
                         <tr onClick={() => this.handleRowClick(3)}>
-
+                            <td>
+                                <FaAngleDown size='1.5rem'/>
+                                {this.state.data_ct.name}
+                                {this.state.data_ct.isExpanded === true &&
+                                <div onClick={this.disablePropagation}>
+                                    <td>
+                                        <YoutubeComponent/>
+                                    </td>
+                                </div>
+                                }
+                            </td>
                         </tr>
                     </tbody>
                 </Table>
