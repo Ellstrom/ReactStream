@@ -13,9 +13,12 @@ import CacheMergedSrc from "./images/cache/cache.jpg";
 import OverpassMergedSrc from "./images/overpass/overpass.jpg";
 import TrainMergedSrc from "./images/train/train.jpg";
 
-const mirageYoutubeProps = {
-    myProp1: 'prop1',
-    myProp2: 'prop2'
+const mirageTableProps = {
+    execute_1_name: "A",
+    execute_2_name: "B",
+    execute_3_name: "hidden",
+    execute_4_name: "hidden",
+    execute_5_name: "hidden"
 };
 
 function App() {
@@ -48,7 +51,7 @@ function App() {
             </div>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 className="mapTitleText" id="Mirage">Mirage</h2>
-            <br/><EllstreamTable youtubeProps={mirageYoutubeProps}/>
+            <br/><EllstreamTable props={mirageTableProps}/>
 
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 className="mapTitleText" id="Nuke">Nuke</h2>
