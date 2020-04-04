@@ -45,6 +45,16 @@ class EllstreamTable extends React.Component {
                         id : this.state.data_executes.id,
                         name : this.state.data_executes.name,
                         isExpanded : !this.state.data_executes.isExpanded
+                    },
+                    data_execute_a : {
+                        id : this.state.data_execute_a.id,
+                        name : this.state.data_execute_a.name,
+                        isExpanded : false
+                    },
+                    data_execute_b : {
+                        id : this.state.data_execute_b.id,
+                        name : this.state.data_execute_b.name,
+                        isExpanded : false
                     }
                 },
                 () => {
