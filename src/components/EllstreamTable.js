@@ -26,27 +26,27 @@ class EllstreamTable extends React.Component {
             },
             data_execute_1 : {
                 id : 11,
-                name : props.props.execute_1_name,
+                name : props.props.executes.execute_1.name,
                 isExpanded : false
             },
             data_execute_2 : {
                 id : 12,
-                name : props.props.execute_2_name,
+                name : props.props.executes.execute_2.name,
                 isExpanded : false
             },
             data_execute_3 : {
                 id : 13,
-                name : props.props.execute_3_name,
+                name : props.props.executes.execute_3.name,
                 isExpanded : false
             },
             data_execute_4 : {
                 id : 14,
-                name : props.props.execute_4_name,
+                name : props.props.executes.execute_4.name,
                 isExpanded : false
             },
             data_execute_5 : {
                 id : 15,
-                name : props.props.execute_5_name,
+                name : props.props.executes.execute_5.name,
                 isExpanded : false
             }
         }
@@ -168,7 +168,7 @@ class EllstreamTable extends React.Component {
                                     <div onClick={this.disablePropagation}>
                                         <table>
                                             <tbody>
-                                                <ExecuteRow rowId="11" executeName="" />
+                                                {this.state.data_execute_1.name !== "hidden" &&
                                                 <tr onClick={() => this.handleRowClick(11)}>
                                                     <td>
                                                         {this.state.data_execute_1.isExpanded ? (
@@ -179,26 +179,28 @@ class EllstreamTable extends React.Component {
                                                         {this.state.data_execute_1.name}
                                                     </td>
                                                     {this.state.data_execute_1.isExpanded &&
-                                                        <td>
-                                                            <div>
-                                                                <table>
-                                                                    <tbody>
-                                                                        <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
-                                                                        <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                        <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
+                                                    <td>
+                                                        <div>
+                                                            <table>
+                                                                <tbody>
+                                                                <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
+                                                                <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
                                                     }
                                                 </tr>
+                                                }
+                                                {this.state.data_execute_2.name !== "hidden" &&
                                                 <tr onClick={() => this.handleRowClick(12)}>
                                                     <td>
                                                         {this.state.data_execute_2.isExpanded ? (
@@ -229,16 +231,82 @@ class EllstreamTable extends React.Component {
                                                     </td>
                                                     }
                                                 </tr>
-                                                <tr onClick={() => this.handleRowClick(13)}>
+                                                }
+                                                {this.state.data_execute_3.name !== "hidden" &&
+                                                    <tr onClick={() => this.handleRowClick(13)}>
+                                                        <td>
+                                                            {this.state.data_execute_3.isExpanded ? (
+                                                                <FaAngleUp size='1.5rem'/>
+                                                            ) : (
+                                                                <FaAngleDown size='1.5rem'/>
+                                                            )}
+                                                            {this.state.data_execute_3.name}
+                                                        </td>
+                                                        {this.state.data_execute_3.isExpanded &&
+                                                        <td>
+                                                            <div>
+                                                                <table>
+                                                                    <tbody>
+                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
+                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        }
+                                                    </tr>
+                                                }
+                                                {this.state.data_execute_4.name !== "hidden" &&
+                                                    <tr onClick={() => this.handleRowClick(14)}>
+                                                        <td>
+                                                            {this.state.data_execute_4.isExpanded ? (
+                                                                <FaAngleUp size='1.5rem'/>
+                                                            ) : (
+                                                                <FaAngleDown size='1.5rem'/>
+                                                            )}
+                                                            {this.state.data_execute_4.name}
+                                                        </td>
+                                                        {this.state.data_execute_4.isExpanded &&
+                                                        <td>
+                                                            <div>
+                                                                <table>
+                                                                    <tbody>
+                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
+                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        }
+                                                    </tr>
+                                                }
+                                                {this.state.data_execute_5.name !== "hidden" &&
+                                                <tr onClick={() => this.handleRowClick(15)}>
                                                     <td>
-                                                        {this.state.data_execute_3.isExpanded ? (
+                                                        {this.state.data_execute_5.isExpanded ? (
                                                             <FaAngleUp size='1.5rem'/>
                                                         ) : (
                                                             <FaAngleDown size='1.5rem'/>
                                                         )}
-                                                        {this.state.data_execute_3.name}
+                                                        {this.state.data_execute_5.name}
                                                     </td>
-                                                    {this.state.data_execute_3.isExpanded &&
+                                                    {this.state.data_execute_5.isExpanded &&
                                                     <td>
                                                         <div>
                                                             <table>
@@ -259,6 +327,7 @@ class EllstreamTable extends React.Component {
                                                     </td>
                                                     }
                                                 </tr>
+                                                }
                                             </tbody>
                                         </table>
                                     </div>

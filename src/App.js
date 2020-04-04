@@ -14,11 +14,24 @@ import OverpassMergedSrc from "./images/overpass/overpass.jpg";
 import TrainMergedSrc from "./images/train/train.jpg";
 
 const mirageTableProps = {
-    execute_1_name: "A",
-    execute_2_name: "B",
-    execute_3_name: "hidden",
-    execute_4_name: "hidden",
-    execute_5_name: "hidden"
+    executes : {
+        execute_1 : {
+            name: "A",
+        },
+        execute_2 : {
+            name: "B",
+        },
+        execute_3 : {
+            name: "hidden",
+        },
+        execute_4 : {
+            name: "hidden",
+        },
+        execute_5 : {
+            name: "hidden",
+        },
+
+    },
 };
 
 function App() {
