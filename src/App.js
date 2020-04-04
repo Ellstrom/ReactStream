@@ -12,19 +12,17 @@ import VertigoMergedSrc from "./images/vertigo/vertigo.jpg";
 import CacheMergedSrc from "./images/cache/cache.jpg";
 import OverpassMergedSrc from "./images/overpass/overpass.jpg";
 import TrainMergedSrc from "./images/train/train.jpg";
-import Tmp from "./components/Tmp";
-import YoutubeComponent from "./components/YoutubeComponent";
 
 function App() {
     return (
-        <div className="App" class="removeHorizontalScroll">
+        <div className="App">
             <br/><br/><br/><br/><br/><br/>
-            <div class="sticky">
+            <div className="sticky">
                 <EllstreamNavbar/>
             </div>
             <Row>
                 <Col>
-                    <h1 class="titleText">Select map</h1>
+                    <h1 className="titleText">Select map</h1>
                 </Col>
             </Row>
             <div className="flexibleDiv">

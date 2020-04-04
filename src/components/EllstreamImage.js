@@ -13,7 +13,7 @@ const EllstreamImage = (props) => {
                             className="csgo-map-image"
                             rounded>
                         </Image>
-                        <h1 class="textOnImage">{props.mapName}</h1>
+                        <h1 className="textOnImage">{props.mapName}</h1>
                     </a>
                 </Col>
             </Row>
