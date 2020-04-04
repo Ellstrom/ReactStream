@@ -13,6 +13,11 @@ import CacheMergedSrc from "./images/cache/cache.jpg";
 import OverpassMergedSrc from "./images/overpass/overpass.jpg";
 import TrainMergedSrc from "./images/train/train.jpg";
 
+const mirageYoutubeProps = {
+    myProp1: 'prop1',
+    myProp2: 'prop2'
+};
+
 function App() {
     return (
         <div className="App">
@@ -43,7 +48,7 @@ function App() {
             </div>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 className="mapTitleText" id="Mirage">Mirage</h2>
-            <br/><EllstreamTable/>
+            <br/><EllstreamTable youtubeProps={mirageYoutubeProps}/>
 
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 className="mapTitleText" id="Nuke">Nuke</h2>

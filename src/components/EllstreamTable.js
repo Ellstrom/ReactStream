@@ -2,6 +2,7 @@ import React from 'react'
 import { Table } from "react-bootstrap";
 import { FaAngleDown, FaAngleUp} from 'react-icons/fa';
 import YoutubeComponent from "./YoutubeComponent";
+import ParentYoutubeComponent from "./ParentYoutubeComponent";
 
 class EllstreamTable extends React.Component {
     constructor() {
@@ -22,12 +23,12 @@ class EllstreamTable extends React.Component {
                 name : "CT",
                 isExpanded : false
             },
-            data_execute_a : {
+            data_execute_1 : {
                 id : 11,
                 name : "A",
                 isExpanded : false
             },
-            data_execute_b : {
+            data_execute_2 : {
                 id : 12,
                 name : "B",
                 isExpanded : false
@@ -36,8 +37,6 @@ class EllstreamTable extends React.Component {
     }
 
     handleRowClick(rowId) {
-        console.log("inside handleRowClick, rowId=", rowId)
-
         if(rowId === this.state.data_executes.id){
             this.setState(
                 {
@@ -46,19 +45,16 @@ class EllstreamTable extends React.Component {
                         name : this.state.data_executes.name,
                         isExpanded : !this.state.data_executes.isExpanded
                     },
-                    data_execute_a : {
-                        id : this.state.data_execute_a.id,
-                        name : this.state.data_execute_a.name,
+                    data_execute_1 : {
+                        id : this.state.data_execute_1.id,
+                        name : this.state.data_execute_1.name,
                         isExpanded : false
                     },
-                    data_execute_b : {
-                        id : this.state.data_execute_b.id,
-                        name : this.state.data_execute_b.name,
+                    data_execute_2 : {
+                        id : this.state.data_execute_2.id,
+                        name : this.state.data_execute_2.name,
                         isExpanded : false
                     }
-                },
-                () => {
-                    console.log("Callback value", this.state.data_executes)
                 }
             )
         }else if(rowId === this.state.data_t.id){
@@ -69,9 +65,6 @@ class EllstreamTable extends React.Component {
                         name : this.state.data_t.name,
                         isExpanded : !this.state.data_t.isExpanded
                     }
-                },
-                () => {
-                    console.log("Callback value", this.state.data_t)
                 }
             )
         }else if(rowId === this.state.data_ct.id){
@@ -82,35 +75,26 @@ class EllstreamTable extends React.Component {
                         name : this.state.data_ct.name,
                         isExpanded : !this.state.data_ct.isExpanded
                     }
-                },
-                () => {
-                    console.log("Callback value", this.state.data_ct)
                 }
             )
-        }else if(rowId === this.state.data_execute_a.id){
+        }else if(rowId === this.state.data_execute_1.id){
             this.setState(
                 {
-                    data_execute_a : {
-                        id : this.state.data_execute_a.id,
-                        name : this.state.data_execute_a.name,
-                        isExpanded : !this.state.data_execute_a.isExpanded
+                    data_execute_1 : {
+                        id : this.state.data_execute_1.id,
+                        name : this.state.data_execute_1.name,
+                        isExpanded : !this.state.data_execute_1.isExpanded
                     }
-                },
-                () => {
-                    console.log("Callback value", this.state.data_execute_a)
                 }
             )
-        }else if(rowId === this.state.data_execute_b.id){
+        }else if(rowId === this.state.data_execute_2.id){
             this.setState(
                 {
-                    data_execute_b : {
-                        id : this.state.data_execute_b.id,
-                        name : this.state.data_execute_b.name,
-                        isExpanded : !this.state.data_execute_b.isExpanded
+                    data_execute_2 : {
+                        id : this.state.data_execute_2.id,
+                        name : this.state.data_execute_2.name,
+                        isExpanded : !this.state.data_execute_2.isExpanded
                     }
-                },
-                () => {
-                    console.log("Callback value", this.state.data_execute_b)
                 }
             )
         }
@@ -140,35 +124,50 @@ class EllstreamTable extends React.Component {
                                             <tbody>
                                             <tr onClick={() => this.handleRowClick(11)}>
                                                 <td>
-                                                    {this.state.data_execute_a.isExpanded ? (
+                                                    {this.state.data_execute_1.isExpanded ? (
                                                         <FaAngleUp size='1.5rem'/>
                                                     ) : (
                                                         <FaAngleDown size='1.5rem'/>
                                                     )}
-                                                    {this.state.data_execute_a.name}
+                                                    {this.state.data_execute_1.name}
                                                 </td>
-                                                {this.state.data_execute_a.isExpanded &&
-                                                <td>
-                                                    <YoutubeComponent/>
-                                                </td>
+                                                {this.state.data_execute_1.isExpanded &&
+                                                    <td>
+                                                        <div>
+                                                            <table>
+                                                                <tbody>
+                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
+                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
                                                 }
                                             </tr>
                                             <tr onClick={() => this.handleRowClick(12)}>
                                                 <td>
-                                                    {this.state.data_execute_b.isExpanded ? (
+                                                    {this.state.data_execute_2.isExpanded ? (
                                                         <FaAngleUp size='1.5rem'/>
                                                     ) : (
                                                         <FaAngleDown size='1.5rem'/>
                                                     )}
-                                                    {this.state.data_execute_b.name}
+                                                    {this.state.data_execute_2.name}
                                                 </td>
-                                                {this.state.data_execute_b.isExpanded &&
+                                                {this.state.data_execute_2.isExpanded &&
                                                 <td>
                                                     <YoutubeComponent/>
                                                 </td>
                                                 }
                                             </tr>
-                                            </tbody>
+                                        </tbody>
                                         </table>
                                     </div>
                                 }
@@ -184,9 +183,7 @@ class EllstreamTable extends React.Component {
                                 {this.state.data_t.name}
                                 {this.state.data_t.isExpanded &&
                                 <div onClick={this.disablePropagation}>
-                                    <td>
-                                        <YoutubeComponent/>
-                                    </td>
+                                    <YoutubeComponent/>
                                 </div>
                                 }
                             </td>
