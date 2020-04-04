@@ -12,6 +12,8 @@ import VertigoMergedSrc from "./images/vertigo/vertigo.jpg";
 import CacheMergedSrc from "./images/cache/cache.jpg";
 import OverpassMergedSrc from "./images/overpass/overpass.jpg";
 import TrainMergedSrc from "./images/train/train.jpg";
+import Tmp from "./components/Tmp";
+import YoutubeComponent from "./components/YoutubeComponent";
 
 function App() {
     return (
@@ -44,6 +46,7 @@ function App() {
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 className="mapTitleText" id="Mirage">Mirage</h2>
             <br/><EllstreamTable/>
+
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 className="mapTitleText" id="Nuke">Nuke</h2>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

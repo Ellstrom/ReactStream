@@ -1,21 +1,6 @@
 import React from 'react'
-import EllstreamTable from "./EllstreamTable";
 
-class TestComponent extends React.Component {
-
-    render() {
-        let allItemRows = [];
-
-        this.state.data.forEach(item => {
-            const perItemRows = this.renderItem(item);
-            allItemRows = allItemRows.concat(perItemRows);
-        });
-
-        return (
-            <table>{allItemRows}</table>
-        );
-    }
-
+class EllstreamTable extends React.Component {
     constructor() {
         super();
 
@@ -65,45 +50,18 @@ class TestComponent extends React.Component {
         return itemRows;
     }
 
+    render() {
+        let allItemRows = [];
 
-}
+        this.state.data.forEach(item => {
+            const perItemRows = this.renderItem(item);
+            allItemRows = allItemRows.concat(perItemRows);
+        });
 
-export default TestComponent;
-
-/*
-
-import React from 'react'
-import { Table } from "react-bootstrap";
-import { FaAngleDown } from 'react-icons/fa';
-
-const EllstreamTable = (props) => {
-    return (
-        <div class="flexibleDiv">
-            <Table striped bordered hover variant="dark">
-                <tbody>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        Executes
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        T
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        CT
-                    </td>
-                </tr>
-                </tbody>
-            </Table>
-        </div>
-    )
+        return (
+            <table>{allItemRows}</table>
+        );
+    }
 }
 
 export default EllstreamTable;
- */

@@ -1,17 +1,26 @@
 import React from 'react'
-import EllstreamTable from "./EllstreamTable";
+import { Table } from "react-bootstrap";
+import { FaAngleDown } from 'react-icons/fa';
+import YoutubeComponent from "./YoutubeComponent";
 
-class TestComponent extends React.Component {
+class EllstreamTable extends React.Component {
     constructor() {
         super();
 
         this.state = {
             data : [
-                {id : 1, date : "2014-04-18", total : 121.0, status : "Shipped", name : "A", points: 5, percent : 50},
-                {id : 2, date : "2014-04-21", total : 121.0, status : "Not Shipped", name : "B", points: 10, percent: 60},
-                {id : 3, date : "2014-08-09", total : 121.0, status : "Not Shipped", name : "C", points: 15, percent: 70},
-                {id : 4, date : "2014-04-24", total : 121.0, status : "Shipped", name : "D", points: 20, percent : 80},
-                {id : 5, date : "2014-04-26", total : 121.0, status : "Shipped", name : "E", points: 25, percent : 90},
+                {
+                    id : 1,
+                    name : "Executes",
+                },
+                {
+                    id : 2,
+                    name : "T"
+                },
+                {
+                    id : 3,
+                    name : "CT"
+                },
             ],
             expandedRows : []
         };
@@ -32,18 +41,31 @@ class TestComponent extends React.Component {
         const clickCallback = () => this.handleRowClick(item.id);
         const itemRows = [
             <tr onClick={clickCallback} key={"row-data-" + item.id}>
-                <td>{item.date}</td>
-                <td>{item.total}</td>
-                <td>{item.status}</td>
+                <td>
+                    <FaAngleDown size='1.5rem'/>
+                    {item.name}
+                </td>
             </tr>
         ];
 
         if(this.state.expandedRows.includes(item.id)) {
             itemRows.push(
                 <tr key={"row-expanded-" + item.id}>
-                    <td>{item.name}</td>
-                    <td>{item.points}</td>
-                    <td>{item.percent}</td>
+                    <td>
+                        <tr>
+                            <td>
+                                <YoutubeComponent/>
+                            </td>
+                            <td>
+                                <YoutubeComponent/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <YoutubeComponent/>
+                            </td>
+                        </tr>
+                    </td>
                 </tr>
             );
         }
@@ -60,12 +82,16 @@ class TestComponent extends React.Component {
         });
 
         return (
-            <table>{allItemRows}</table>
+            <div class="flexibleDiv">
+                <Table striped bordered hover variant="dark">
+                    {allItemRows}
+                </Table>
+            </div>
         );
     }
 }
 
-export default TestComponent;
+export default EllstreamTable;
 
 /*
 
