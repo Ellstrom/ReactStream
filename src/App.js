@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import EllstreamNavbar from "./components/EllstreamNavbar";
 import EllstreamImage from "./components/EllstreamImage";
 import EllstreamTable from "./components/EllstreamTable";
+import EmptySpace from "./components/EmptySpace"
 import MirageMergedSrc from "./images/mirage/mirage.jpg";
 import NukeMergedSrc from "./images/nuke/nuke.jpg";
 import Dust2MergedSrc from "./images/dust2/dust2.jpg";
@@ -13,6 +14,7 @@ import CacheMergedSrc from "./images/cache/cache.jpg";
 import OverpassMergedSrc from "./images/overpass/overpass.jpg";
 import TrainMergedSrc from "./images/train/train.jpg";
 import { MirageConfig } from './configurations/MirageConfig';
+
 
 function App() {
     return (
@@ -42,26 +44,26 @@ function App() {
                     <Col xs="auto"><EllstreamImage imageSrc={TrainMergedSrc} mapName="Train"/></Col>
                 </Row>
             </div>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <div id="Mirage">
                 <br/><br/><br/><br/>
                 <h2 className="mapTitleText" >Mirage</h2>
                 <br/><EllstreamTable props={MirageConfig}/>
             </div>
 
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <h2 className="mapTitleText" id="Nuke">Nuke</h2>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <h2 className="mapTitleText" id="Dust2">Dust2</h2>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <h2 className="mapTitleText" id="Inferno">Inferno</h2>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <h2 className="mapTitleText" id="Vertigo">Vertigo</h2>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <h2 className="mapTitleText" id="Cache">Cache</h2>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <h2 className="mapTitleText" id="Overpass">Overpass</h2>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <EmptySpace/>
             <h2 className="mapTitleText" id="Train">Train</h2>
         </div>
     );
