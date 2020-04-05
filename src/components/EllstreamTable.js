@@ -10,7 +10,7 @@ class EllstreamTable extends React.Component {
         this.state = {
             data_executes : {
                 id : 1,
-                name : "Executes",
+                name : "Executes T",
                 isExpanded : false
             },
             data_t : {
