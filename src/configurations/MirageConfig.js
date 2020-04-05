@@ -3,7 +3,7 @@ export const MirageConfig = {
         execute_1 : {
             name: "A",
             videoIds : {
-                videoId1: "fixAExecute",
+                videoId1: "PplT1QDDA4c",
                 videoId2: "kj3Koblbt3s",
                 videoId3: "jJ9L1_Pl3uo",
                 videoId4: "x4VHHS2HtlQ",
@@ -18,7 +18,7 @@ export const MirageConfig = {
         execute_2 : {
             name: "B",
             videoIds : {
-                videoId1: "fixBExecute",
+                videoId1: "1nmduftCQyE",
                 videoId2: "39hFNZJ-y7Y",
                 videoId3: "RR0Vgb7rizM",
                 videoId4: "2DZORFSIaBQ",
