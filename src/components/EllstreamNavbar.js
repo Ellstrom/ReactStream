@@ -2,11 +2,11 @@ import React from 'react'
 import {Navbar, Nav} from "react-bootstrap";
 
 const EllstreamNavbar = () => (
-    <div>
+    <div id="Navbar">
         <br/><br/><br/><br/><br/><br/>
         <div className="sticky">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="#titleText">Home</Navbar.Brand>
+                <Navbar.Brand href="#Navbar">Home</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
