@@ -97,7 +97,17 @@ export const NukeConfig = {
             videoId17: "hidden",
             videoId18: "hidden",
             videoId19: "hidden",
-            videoId20: "hidden"
+            videoId20: "hidden",
+            videoId21: "hidden",
+            videoId22: "hidden",
+            videoId23: "hidden",
+            videoId24: "hidden",
+            videoId25: "hidden",
+            videoId26: "hidden",
+            videoId27: "hidden",
+            videoId28: "hidden",
+            videoId29: "hidden",
+            videoId30: "hidden"
         }
     },
     CT : {
@@ -121,7 +131,17 @@ export const NukeConfig = {
             videoId17: "hidden",
             videoId18: "hidden",
             videoId19: "hidden",
-            videoId20: "hidden"
+            videoId20: "hidden",
+            videoId21: "hidden",
+            videoId22: "hidden",
+            videoId23: "hidden",
+            videoId24: "hidden",
+            videoId25: "hidden",
+            videoId26: "hidden",
+            videoId27: "hidden",
+            videoId28: "hidden",
+            videoId29: "hidden",
+            videoId30: "hidden"
         }
     }
 };

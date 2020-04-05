@@ -335,6 +335,11 @@ class EllstreamTable extends React.Component {
                                                     <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId15} videoId2={this.props.props.T.videoIds.videoId16}/>
                                                     <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId17} videoId2={this.props.props.T.videoIds.videoId18}/>
                                                     <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId19} videoId2={this.props.props.T.videoIds.videoId20}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId21} videoId2={this.props.props.T.videoIds.videoId22}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId23} videoId2={this.props.props.T.videoIds.videoId24}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId25} videoId2={this.props.props.T.videoIds.videoId26}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId27} videoId2={this.props.props.T.videoIds.videoId28}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId29} videoId2={this.props.props.T.videoIds.videoId30}/>
                                                 </tbody>
                                             </table>
                                         ) : (
@@ -367,6 +372,11 @@ class EllstreamTable extends React.Component {
                                                     <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId15} videoId2={this.props.props.CT.videoIds.videoId16}/>
                                                     <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId17} videoId2={this.props.props.CT.videoIds.videoId18}/>
                                                     <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId19} videoId2={this.props.props.CT.videoIds.videoId20}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId21} videoId2={this.props.props.CT.videoIds.videoId22}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId23} videoId2={this.props.props.CT.videoIds.videoId24}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId25} videoId2={this.props.props.CT.videoIds.videoId26}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId27} videoId2={this.props.props.CT.videoIds.videoId28}/>
+                                                    <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId29} videoId2={this.props.props.CT.videoIds.videoId30}/>
                                                 </tbody>
                                             </table>
                                         ) : (

@@ -12,7 +12,7 @@ const Feedback = () => (
                 <p className="feedbackText">For example, about:</p>
                 <p className="feedbackText">&bull; Website layout</p>
                 <p className="feedbackText">&bull; Youtube layout</p>
-                <p className="feedbackText">&bull; Video Content</p>
+                <p className="feedbackText">&bull; Video content</p>
             </Col>
         </Row>
         <EmptySpace/>
