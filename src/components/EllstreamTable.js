@@ -1,7 +1,6 @@
 import React from 'react'
 import { Table } from "react-bootstrap";
 import { FaAngleDown, FaAngleUp} from 'react-icons/fa';
-import YoutubeComponent from "./YoutubeComponent";
 import ParentYoutubeComponent from "./ParentYoutubeComponent";
 
 class EllstreamTable extends React.Component {
@@ -179,53 +178,48 @@ class EllstreamTable extends React.Component {
                                                         {this.state.data_execute_1.name}
                                                     </td>
                                                     {this.state.data_execute_1.isExpanded &&
-                                                    <td>
-                                                        <div>
-                                                            <table>
-                                                                <tbody>
-                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId1} videoId2={this.props.props.executes.execute_1.videoIds.videoId2}/>
-                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId3} videoId2={this.props.props.executes.execute_1.videoIds.videoId4}/>
-                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId5} videoId2={this.props.props.executes.execute_1.videoIds.videoId6}/>
-                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId7} videoId2={this.props.props.executes.execute_1.videoIds.videoId8}/>
-                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId9} videoId2={this.props.props.executes.execute_1.videoIds.videoId10}/>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </td>
+                                                        <td>
+                                                            <div>
+                                                                <table>
+                                                                    <tbody>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId1} videoId2={this.props.props.executes.execute_1.videoIds.videoId2}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId3} videoId2={this.props.props.executes.execute_1.videoIds.videoId4}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId5} videoId2={this.props.props.executes.execute_1.videoIds.videoId6}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId7} videoId2={this.props.props.executes.execute_1.videoIds.videoId8}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_1.videoIds.videoId9} videoId2={this.props.props.executes.execute_1.videoIds.videoId10}/>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
                                                     }
                                                 </tr>
                                                 }
                                                 {this.state.data_execute_2.name !== "hidden" &&
-                                                <tr onClick={() => this.handleRowClick(12)}>
-                                                    <td>
-                                                        {this.state.data_execute_2.isExpanded ? (
-                                                            <FaAngleUp size='1.5rem'/>
-                                                        ) : (
-                                                            <FaAngleDown size='1.5rem'/>
-                                                        )}
-                                                        {this.state.data_execute_2.name}
-                                                    </td>
-                                                    {this.state.data_execute_2.isExpanded &&
-                                                    <td>
-                                                        <div>
-                                                            <table>
-                                                                <tbody>
-                                                                <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
-                                                                <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </td>
-                                                    }
-                                                </tr>
+                                                    <tr onClick={() => this.handleRowClick(12)}>
+                                                        <td>
+                                                            {this.state.data_execute_2.isExpanded ? (
+                                                                <FaAngleUp size='1.5rem'/>
+                                                            ) : (
+                                                                <FaAngleDown size='1.5rem'/>
+                                                            )}
+                                                            {this.state.data_execute_2.name}
+                                                        </td>
+                                                        {this.state.data_execute_2.isExpanded &&
+                                                            <td>
+                                                                <div>
+                                                                    <table>
+                                                                        <tbody>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_2.videoIds.videoId1} videoId2={this.props.props.executes.execute_2.videoIds.videoId2}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_2.videoIds.videoId3} videoId2={this.props.props.executes.execute_2.videoIds.videoId4}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_2.videoIds.videoId5} videoId2={this.props.props.executes.execute_2.videoIds.videoId6}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_2.videoIds.videoId7} videoId2={this.props.props.executes.execute_2.videoIds.videoId8}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_2.videoIds.videoId9} videoId2={this.props.props.executes.execute_2.videoIds.videoId10}/>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        }
+                                                    </tr>
                                                 }
                                                 {this.state.data_execute_3.name !== "hidden" &&
                                                     <tr onClick={() => this.handleRowClick(13)}>
@@ -238,24 +232,19 @@ class EllstreamTable extends React.Component {
                                                             {this.state.data_execute_3.name}
                                                         </td>
                                                         {this.state.data_execute_3.isExpanded &&
-                                                        <td>
-                                                            <div>
-                                                                <table>
-                                                                    <tbody>
-                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
-                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
+                                                            <td>
+                                                                <div>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_3.videoIds.videoId1} videoId2={this.props.props.executes.execute_3.videoIds.videoId2}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_3.videoIds.videoId3} videoId2={this.props.props.executes.execute_3.videoIds.videoId4}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_3.videoIds.videoId5} videoId2={this.props.props.executes.execute_3.videoIds.videoId6}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_3.videoIds.videoId7} videoId2={this.props.props.executes.execute_3.videoIds.videoId8}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_3.videoIds.videoId9} videoId2={this.props.props.executes.execute_3.videoIds.videoId10}/>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
                                                         }
                                                     </tr>
                                                 }
@@ -270,24 +259,19 @@ class EllstreamTable extends React.Component {
                                                             {this.state.data_execute_4.name}
                                                         </td>
                                                         {this.state.data_execute_4.isExpanded &&
-                                                        <td>
-                                                            <div>
-                                                                <table>
-                                                                    <tbody>
-                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
-                                                                    <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
+                                                            <td>
+                                                                <div>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_4.videoIds.videoId1} videoId2={this.props.props.executes.execute_4.videoIds.videoId2}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_4.videoIds.videoId3} videoId2={this.props.props.executes.execute_4.videoIds.videoId4}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_4.videoIds.videoId5} videoId2={this.props.props.executes.execute_4.videoIds.videoId6}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_4.videoIds.videoId7} videoId2={this.props.props.executes.execute_4.videoIds.videoId8}/>
+                                                                            <ParentYoutubeComponent videoId1={this.props.props.executes.execute_4.videoIds.videoId9} videoId2={this.props.props.executes.execute_4.videoIds.videoId10}/>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
                                                         }
                                                     </tr>
                                                 }
@@ -302,24 +286,19 @@ class EllstreamTable extends React.Component {
                                                         {this.state.data_execute_5.name}
                                                     </td>
                                                     {this.state.data_execute_5.isExpanded &&
-                                                    <td>
-                                                        <div>
-                                                            <table>
-                                                                <tbody>
-                                                                <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="-8pgTeBCms4"/>
-                                                                <ParentYoutubeComponent videoId1="-8pgTeBCms4" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                <ParentYoutubeComponent videoId1="hidden" videoId2="hidden"/>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </td>
+                                                        <td>
+                                                            <div>
+                                                                <table>
+                                                                    <tbody>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId1} videoId2={this.props.props.executes.execute_5.videoIds.videoId2}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId3} videoId2={this.props.props.executes.execute_5.videoIds.videoId4}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId5} videoId2={this.props.props.executes.execute_5.videoIds.videoId6}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId7} videoId2={this.props.props.executes.execute_5.videoIds.videoId8}/>
+                                                                        <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId9} videoId2={this.props.props.executes.execute_5.videoIds.videoId10}/>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
                                                     }
                                                 </tr>
                                                 }
@@ -338,9 +317,17 @@ class EllstreamTable extends React.Component {
                                 )}
                                 {this.state.data_t.name}
                                 {this.state.data_t.isExpanded &&
-                                <div onClick={this.disablePropagation}>
-                                    <YoutubeComponent/>
-                                </div>
+                                    <div className="marginTop" onClick={this.disablePropagation}>
+                                        <table>
+                                            <tbody>
+                                                <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId1} videoId2={this.props.props.T.videoIds.videoId2}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId3} videoId2={this.props.props.T.videoIds.videoId4}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId5} videoId2={this.props.props.T.videoIds.videoId6}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId7} videoId2={this.props.props.T.videoIds.videoId8}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.T.videoIds.videoId9} videoId2={this.props.props.T.videoIds.videoId10}/>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 }
                             </td>
                         </tr>
@@ -353,11 +340,17 @@ class EllstreamTable extends React.Component {
                                 )}
                                 {this.state.data_ct.name}
                                 {this.state.data_ct.isExpanded &&
-                                <div onClick={this.disablePropagation}>
-                                    <td>
-                                        <YoutubeComponent/>
-                                    </td>
-                                </div>
+                                    <div className="marginTop" onClick={this.disablePropagation}>
+                                        <table>
+                                            <tbody>
+                                                <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId1} videoId2={this.props.props.CT.videoIds.videoId2}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId3} videoId2={this.props.props.CT.videoIds.videoId4}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId5} videoId2={this.props.props.CT.videoIds.videoId6}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId7} videoId2={this.props.props.CT.videoIds.videoId8}/>
+                                                <ParentYoutubeComponent videoId1={this.props.props.CT.videoIds.videoId9} videoId2={this.props.props.CT.videoIds.videoId10}/>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 }
                             </td>
                         </tr>
@@ -369,73 +362,3 @@ class EllstreamTable extends React.Component {
 }
 
 export default EllstreamTable;
-
-/*
-const Tmp = (props) => {
-    return (
-        <div class="flexibleDiv">
-            <Table striped bordered hover variant="dark">
-                <tbody>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        Executes
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        T
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        CT
-                    </td>
-                </tr>
-                </tbody>
-            </Table>
-        </div>
-    )
-}
- */
-
-
-/*
-
-import React from 'react'
-import { Table } from "react-bootstrap";
-import { FaAngleDown } from 'react-icons/fa';
-
-const EllstreamTable = (props) => {
-    return (
-        <div class="flexibleDiv">
-            <Table striped bordered hover variant="dark">
-                <tbody>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        Executes
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        T
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <FaAngleDown size='1.5rem'/>
-                        CT
-                    </td>
-                </tr>
-                </tbody>
-            </Table>
-        </div>
-    )
-}
-
-export default EllstreamTable;
- */

@@ -32,17 +32,93 @@ const mirageTableProps = {
         },
         execute_2 : {
             name: "B",
+            videoIds : {
+                videoId1: "-8pgTeBCms4",
+                videoId2: "hidden",
+                videoId3: "hidden",
+                videoId4: "hidden",
+                videoId5: "hidden",
+                videoId6: "hidden",
+                videoId7: "hidden",
+                videoId8: "hidden",
+                videoId9: "hidden",
+                videoId10: "hidden"
+            },
         },
         execute_3 : {
             name: "hidden",
+            videoIds : {
+                videoId1: "hidden",
+                videoId2: "hidden",
+                videoId3: "hidden",
+                videoId4: "hidden",
+                videoId5: "hidden",
+                videoId6: "hidden",
+                videoId7: "hidden",
+                videoId8: "hidden",
+                videoId9: "hidden",
+                videoId10: "hidden"
+            },
         },
         execute_4 : {
             name: "hidden",
+            videoIds : {
+                videoId1: "hidden",
+                videoId2: "hidden",
+                videoId3: "hidden",
+                videoId4: "hidden",
+                videoId5: "hidden",
+                videoId6: "hidden",
+                videoId7: "hidden",
+                videoId8: "hidden",
+                videoId9: "hidden",
+                videoId10: "hidden"
+            },
         },
         execute_5 : {
             name: "hidden",
+            videoIds : {
+                videoId1: "hidden",
+                videoId2: "hidden",
+                videoId3: "hidden",
+                videoId4: "hidden",
+                videoId5: "hidden",
+                videoId6: "hidden",
+                videoId7: "hidden",
+                videoId8: "hidden",
+                videoId9: "hidden",
+                videoId10: "hidden"
+            },
         },
     },
+    T : {
+        videoIds : {
+            videoId1: "-8pgTeBCms4",
+            videoId2: "-8pgTeBCms4",
+            videoId3: "-8pgTeBCms4",
+            videoId4: "-8pgTeBCms4",
+            videoId5: "-8pgTeBCms4",
+            videoId6: "-8pgTeBCms4",
+            videoId7: "-8pgTeBCms4",
+            videoId8: "hidden",
+            videoId9: "hidden",
+            videoId10: "hidden"
+        }
+    },
+    CT : {
+        videoIds : {
+            videoId1: "-8pgTeBCms4",
+            videoId2: "-8pgTeBCms4",
+            videoId3: "-8pgTeBCms4",
+            videoId4: "-8pgTeBCms4",
+            videoId5: "-8pgTeBCms4",
+            videoId6: "-8pgTeBCms4",
+            videoId7: "-8pgTeBCms4",
+            videoId8: "hidden",
+            videoId9: "hidden",
+            videoId10: "hidden"
+        }
+    }
 };
 
 function App() {
