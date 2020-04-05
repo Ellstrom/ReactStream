@@ -16,24 +16,24 @@ import TrainMergedSrc from "./images/train/train.jpg";
 const mirageTableProps = {
     executes : {
         execute_1 : {
-            name: "A",
+            name: "hidden",
             videoIds : {
-                videoId1: "-8pgTeBCms4",
-                videoId2: "-8pgTeBCms4",
-                videoId3: "-8pgTeBCms4",
-                videoId4: "-8pgTeBCms4",
-                videoId5: "-8pgTeBCms4",
-                videoId6: "-8pgTeBCms4",
-                videoId7: "-8pgTeBCms4",
+                videoId1: "hidden",
+                videoId2: "hidden",
+                videoId3: "hidden",
+                videoId4: "hidden",
+                videoId5: "hidden",
+                videoId6: "hidden",
+                videoId7: "hidden",
                 videoId8: "hidden",
                 videoId9: "hidden",
                 videoId10: "hidden"
             },
         },
         execute_2 : {
-            name: "B",
+            name: "hidden",
             videoIds : {
-                videoId1: "-8pgTeBCms4",
+                videoId1: "hidden",
                 videoId2: "hidden",
                 videoId3: "hidden",
                 videoId4: "hidden",
@@ -93,30 +93,50 @@ const mirageTableProps = {
     },
     T : {
         videoIds : {
-            videoId1: "-8pgTeBCms4",
-            videoId2: "-8pgTeBCms4",
-            videoId3: "-8pgTeBCms4",
-            videoId4: "-8pgTeBCms4",
-            videoId5: "-8pgTeBCms4",
-            videoId6: "-8pgTeBCms4",
-            videoId7: "-8pgTeBCms4",
+            videoId1: "hidden",
+            videoId2: "hidden",
+            videoId3: "hidden",
+            videoId4: "hidden",
+            videoId5: "hidden",
+            videoId6: "hidden",
+            videoId7: "hidden",
             videoId8: "hidden",
             videoId9: "hidden",
-            videoId10: "hidden"
+            videoId10: "hidden",
+            videoId11: "hidden",
+            videoId12: "hidden",
+            videoId13: "hidden",
+            videoId14: "hidden",
+            videoId15: "hidden",
+            videoId16: "hidden",
+            videoId17: "hidden",
+            videoId18: "hidden",
+            videoId19: "hidden",
+            videoId20: "hidden"
         }
     },
     CT : {
         videoIds : {
-            videoId1: "-8pgTeBCms4",
-            videoId2: "-8pgTeBCms4",
-            videoId3: "-8pgTeBCms4",
-            videoId4: "-8pgTeBCms4",
-            videoId5: "-8pgTeBCms4",
-            videoId6: "-8pgTeBCms4",
-            videoId7: "-8pgTeBCms4",
+            videoId1: "hidden",
+            videoId2: "hidden",
+            videoId3: "hidden",
+            videoId4: "hidden",
+            videoId5: "hidden",
+            videoId6: "hidden",
+            videoId7: "hidden",
             videoId8: "hidden",
             videoId9: "hidden",
-            videoId10: "hidden"
+            videoId10: "hidden",
+            videoId11: "hidden",
+            videoId12: "hidden",
+            videoId13: "hidden",
+            videoId14: "hidden",
+            videoId15: "hidden",
+            videoId16: "hidden",
+            videoId17: "hidden",
+            videoId18: "hidden",
+            videoId19: "hidden",
+            videoId20: "hidden"
         }
     }
 };
@@ -150,8 +170,11 @@ function App() {
                 </Row>
             </div>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <h2 className="mapTitleText" id="Mirage">Mirage</h2>
-            <br/><EllstreamTable props={mirageTableProps}/>
+            <div id="Mirage">
+                <br/><br/><br/><br/>
+                <h2 className="mapTitleText" >Mirage</h2>
+                <br/><EllstreamTable props={mirageTableProps}/>
+            </div>
 
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <h2 className="mapTitleText" id="Nuke">Nuke</h2>

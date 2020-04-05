@@ -17,7 +17,6 @@ class YoutubeComponent extends React.Component {
         }else{
             return null;
         }
-
     }
 
     _onReady(event) {
