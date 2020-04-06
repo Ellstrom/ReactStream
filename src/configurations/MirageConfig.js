@@ -100,7 +100,7 @@ export const MirageConfig = {
             videoId20: "zA-CGZVTiXw",
             videoId21: "51O2KXJZZoE",
             videoId22: "zFJN4LJH2G4",
-            videoId23: "hidden",
+            videoId23: "nYmoLIzpuA0",
             videoId24: "hidden",
             videoId25: "hidden",
             videoId26: "hidden",
