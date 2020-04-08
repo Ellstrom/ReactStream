@@ -78,7 +78,7 @@ export const Dust2Config = {
     },
     T : {
         videoIds : {
-            videoId1: "P2PT9IVpFpk",
+            videoId1: "jUVW6O3xnlQ",
             videoId2: "4GAKlB0boPE",
             videoId3: "lT08AowXyeI",
             videoId4: "EsGeGRioIJ8",
