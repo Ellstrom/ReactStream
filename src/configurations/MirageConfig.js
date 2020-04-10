@@ -1,7 +1,7 @@
 export const MirageConfig = {
     executes : {
         execute_1 : {
-            name: "A",
+            name: "A-Execute",
             videoIds : {
                 videoId1: "PplT1QDDA4c",
                 videoId2: "kj3Koblbt3s",
@@ -16,7 +16,7 @@ export const MirageConfig = {
             },
         },
         execute_2 : {
-            name: "B",
+            name: "B-Execute",
             videoIds : {
                 videoId1: "1nmduftCQyE",
                 videoId2: "39hFNZJ-y7Y",
@@ -31,7 +31,7 @@ export const MirageConfig = {
             },
         },
         execute_3 : {
-            name: "Mid",
+            name: "1-3-1",
             videoIds : {
                 videoId1: "T9KAOFbJzp4",
                 videoId2: "iTjelxItrkQ",
@@ -119,8 +119,8 @@ export const MirageConfig = {
             videoId5: "wvU333UtUTQ",
             videoId6: "GkmyAYjwHXE",
             videoId7: "A70WypTrP-0",
-            videoId8: "hidden",
-            videoId9: "hidden",
+            videoId8: "WVYt579rvKg",
+            videoId9: "3mYZf7frgcg",
             videoId10: "hidden",
             videoId11: "hidden",
             videoId12: "hidden",

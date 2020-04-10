@@ -1,7 +1,7 @@
 export const NukeConfig = {
     executes : {
         execute_1 : {
-            name: "A",
+            name: "A-Execute",
             videoIds : {
                 videoId1: "0n9ZTvoVsI0",
                 videoId2: "473fxB4-4Hs",
@@ -16,7 +16,7 @@ export const NukeConfig = {
             },
         },
         execute_2 : {
-            name: "Ramp",
+            name: "Ramp-Execute",
             videoIds : {
                 videoId1: "-A69ZzHE44I",
                 videoId2: "CuMYlnLbALA",
@@ -31,12 +31,12 @@ export const NukeConfig = {
             },
         },
         execute_3 : {
-            name: "hidden",
+            name: "Yard-Execute",
             videoIds : {
-                videoId1: "hidden",
-                videoId2: "hidden",
-                videoId3: "hidden",
-                videoId4: "hidden",
+                videoId1: "CwMu4wxJ_Lw",
+                videoId2: "sizrHwG4sgY",
+                videoId3: "FHmgepYg630",
+                videoId4: "eqdW1cqKBbo",
                 videoId5: "hidden",
                 videoId6: "hidden",
                 videoId7: "hidden",
@@ -91,9 +91,9 @@ export const NukeConfig = {
             videoId11: "EvtjfTOcF5c",
             videoId12: "w-fue6Brrws",
             videoId13: "22F0Gko4hsI",
-            videoId14: "hidden",
-            videoId15: "hidden",
-            videoId16: "hidden",
+            videoId14: "sizrHwG4sgY",
+            videoId15: "FHmgepYg630",
+            videoId16: "eqdW1cqKBbo",
             videoId17: "hidden",
             videoId18: "hidden",
             videoId19: "hidden",

@@ -1,7 +1,7 @@
 export const InfernoConfig = {
     executes : {
         execute_1 : {
-            name: "A",
+            name: "A-Execute",
             videoIds : {
                 videoId1: "2pFk-FUGnZA",
                 videoId2: "B50IZFbF5sM",
@@ -16,7 +16,7 @@ export const InfernoConfig = {
             },
         },
         execute_2 : {
-            name: "B",
+            name: "B-Execute",
             videoIds : {
                 videoId1: "ARouTAHEkks",
                 videoId2: "ymWPO7168kM",
@@ -91,7 +91,7 @@ export const InfernoConfig = {
             videoId11: "Qr8cNUfaUUw",
             videoId12: "OFtWJRc-RUg",
             videoId13: "r-TOT86EOF0",
-            videoId14: "hidden",
+            videoId14: "EtlgxbeeUBE",
             videoId15: "hidden",
             videoId16: "hidden",
             videoId17: "hidden",
@@ -115,7 +115,7 @@ export const InfernoConfig = {
             videoId1: "nGwL_iZ597o",
             videoId2: "81DkJ6MRESw",
             videoId3: "phm6X9jIiP4",
-            videoId4: "hidden",
+            videoId4: "LQ75JqDZqjU",
             videoId5: "hidden",
             videoId6: "hidden",
             videoId7: "hidden",
