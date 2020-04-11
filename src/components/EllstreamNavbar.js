@@ -11,12 +11,13 @@ const EllstreamNavbar = () => (
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="#Mirage">Mirage</Nav.Link>
-                        <Nav.Link href="#Nuke">Nuke</Nav.Link>
-                        <Nav.Link href="#Dust2">Dust2</Nav.Link>
                         <Nav.Link href="#Inferno">Inferno</Nav.Link>
+                        <Nav.Link href="#Dust2">Dust2</Nav.Link>
+                        <Nav.Link href="#Nuke">Nuke</Nav.Link>
                         <Nav.Link href="#Vertigo">Vertigo</Nav.Link>
-                        <Nav.Link href="#Cache">Cache</Nav.Link>
                         <Nav.Link href="#Overpass">Overpass</Nav.Link>
+                        <Nav.Link href="#Anubis">Anubis</Nav.Link>
+                        <Nav.Link href="#Cache">Cache</Nav.Link>
                         <Nav.Link href="#Train">Train</Nav.Link>
                     </Nav>
                     <Nav>
