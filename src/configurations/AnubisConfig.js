@@ -3,11 +3,11 @@ export const AnubisConfig = {
         execute_1 : {
             name: "B-Execute",
             videoIds : {
-                videoId1: "TZRbY0MeQSw",
+                videoId1: "V2JGzL5nRAA",
                 videoId2: "f3ir1gtOCM0",
                 videoId3: "x4ukO5sO-Dg",
-                videoId4: "XAsdYIsMh_s",
-                videoId5: "hidden",
+                videoId4: "NHWQhf4fIy0",
+                videoId5: "XAsdYIsMh_s",
                 videoId6: "hidden",
                 videoId7: "hidden",
                 videoId8: "hidden",
