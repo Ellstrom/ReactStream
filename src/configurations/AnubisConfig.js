@@ -80,7 +80,7 @@ export const AnubisConfig = {
         videoIds : {
             videoId1: "f3ir1gtOCM0",
             videoId2: "kqzMwvnUtuo",
-            videoId3: "hidden",
+            videoId3: "lhwI9l9woT8",
             videoId4: "hidden",
             videoId5: "hidden",
             videoId6: "hidden",
@@ -112,8 +112,8 @@ export const AnubisConfig = {
     },
     CT : {
         videoIds : {
-            videoId1: "69eBQdaA7yE",
-            videoId2: "hidden",
+            videoId1: "vSNYXp3vafs",
+            videoId2: "69eBQdaA7yE",
             videoId3: "hidden",
             videoId4: "hidden",
             videoId5: "hidden",
