@@ -9,6 +9,7 @@ import { VertigoConfig } from "./configurations/VertigoConfig";
 import { CacheConfig } from "./configurations/CacheConfig";
 import { OverpassConfig } from "./configurations/OverpassConfig";
 import { TrainConfig } from "./configurations/TrainConfig";
+import { AnubisConfig } from "./configurations/AnubisConfig";
 import TableArea from "./components/TableArea";
 import Feedback from "./components/Feedback";
 import ImageSection from "./components/ImageSection";
@@ -20,13 +21,14 @@ function App() {
             <EllstreamNavbar/>
             <ImageSection/>
             <TableArea mapName="Mirage" config={MirageConfig}/>
-            <TableArea mapName="Nuke" config={NukeConfig}/>
-            <TableArea mapName="Dust2" config={Dust2Config}/>
             <TableArea mapName="Inferno" config={InfernoConfig}/>
+            <TableArea mapName="Dust2" config={Dust2Config}/>
+            <TableArea mapName="Nuke" config={NukeConfig}/>
             <TableArea mapName="Vertigo" config={VertigoConfig}/>
-            <TableArea mapName="Cache" config={CacheConfig}/>
             <TableArea mapName="Overpass" config={OverpassConfig}/>
             <TableArea mapName="Train" config={TrainConfig}/>
+            <TableArea mapName="Anubis" config={AnubisConfig}/>
+            <TableArea mapName="Cache" config={CacheConfig}/>
             <Feedback/>
         </div>
     );
