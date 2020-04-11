@@ -1,12 +1,12 @@
 export const AnubisConfig = {
     executes : {
         execute_1 : {
-            name: "hidden",
+            name: "B-Execute",
             videoIds : {
-                videoId1: "hidden",
-                videoId2: "hidden",
-                videoId3: "hidden",
-                videoId4: "hidden",
+                videoId1: "TZRbY0MeQSw",
+                videoId2: "f3ir1gtOCM0",
+                videoId3: "x4ukO5sO-Dg",
+                videoId4: "XAsdYIsMh_s",
                 videoId5: "hidden",
                 videoId6: "hidden",
                 videoId7: "hidden",
@@ -81,8 +81,8 @@ export const AnubisConfig = {
             videoId1: "f3ir1gtOCM0",
             videoId2: "kqzMwvnUtuo",
             videoId3: "lhwI9l9woT8",
-            videoId4: "hidden",
-            videoId5: "hidden",
+            videoId4: "x4ukO5sO-Dg",
+            videoId5: "XAsdYIsMh_s",
             videoId6: "hidden",
             videoId7: "hidden",
             videoId8: "hidden",
