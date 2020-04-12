@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-const EllstreamImage = (props) => {
+const EllstreamImageWithLink = (props) => {
     return (
         <Container>
             <Row>
                 <Col>
-                    <a href={"#"+props.mapName}>
+                    <a href={"/"+props.mapName}>
                         <Image
                             src={props.imageSrc}
                             alt={props.mapName}
@@ -21,4 +21,4 @@ const EllstreamImage = (props) => {
     )
 }
 
-export default EllstreamImage;
+export default EllstreamImageWithLink;
