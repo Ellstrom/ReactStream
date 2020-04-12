@@ -83,7 +83,7 @@ export const AnubisConfig = {
             videoId3: "lhwI9l9woT8",
             videoId4: "x4ukO5sO-Dg",
             videoId5: "XAsdYIsMh_s",
-            videoId6: "hidden",
+            videoId6: "NHWQhf4fIy0",
             videoId7: "hidden",
             videoId8: "hidden",
             videoId9: "hidden",
