@@ -112,7 +112,7 @@ export const Dust2Config = {
     },
     CT : {
         videoIds : {
-            videoId1: "hidden",
+            videoId1: "iqckp6saP9A",
             videoId2: "hidden",
             videoId3: "hidden",
             videoId4: "hidden",
