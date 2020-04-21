@@ -16,22 +16,7 @@ export const MirageConfig = {
             },
         },
         execute_2 : {
-            name: "B-Execute",
-            videoIds : {
-                videoId1: "1nmduftCQyE",
-                videoId2: "39hFNZJ-y7Y",
-                videoId3: "RR0Vgb7rizM",
-                videoId4: "2DZORFSIaBQ",
-                videoId5: "kBSybnwO8VI",
-                videoId6: "YOL6OB4PaGM",
-                videoId7: "2bYRveNCcdQ",
-                videoId8: "Cjar3FHvO6g",
-                videoId9: "hidden",
-                videoId10: "hidden"
-            },
-        },
-        execute_3 : {
-            name: "1-3-1",
+            name: "1-3-1 Strat",
             videoIds : {
                 videoId1: "T9KAOFbJzp4",
                 videoId2: "iTjelxItrkQ",
@@ -41,6 +26,21 @@ export const MirageConfig = {
                 videoId6: "zA-CGZVTiXw",
                 videoId7: "51O2KXJZZoE",
                 videoId8: "ZLxzxRQFYl4",
+                videoId9: "hidden",
+                videoId10: "hidden"
+            },
+        },
+        execute_3 : {
+            name: "B-Execute",
+            videoIds : {
+                videoId1: "hidden",
+                videoId2: "hidden",
+                videoId3: "hidden",
+                videoId4: "hidden",
+                videoId5: "hidden",
+                videoId6: "hidden",
+                videoId7: "hidden",
+                videoId8: "hidden",
                 videoId9: "hidden",
                 videoId10: "hidden"
             },
