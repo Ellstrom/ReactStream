@@ -31,7 +31,7 @@ export const MirageConfig = {
             },
         },
         execute_3 : {
-            name: "B-Execute",
+            name: "hidden",
             videoIds : {
                 videoId1: "hidden",
                 videoId2: "hidden",
