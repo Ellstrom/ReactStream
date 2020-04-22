@@ -84,7 +84,7 @@ export const Dust2Config = {
             videoId4: "PQzyyEoPDDw",
             videoId5: "fHTebGHe54s",
             videoId6: "n0eNKn9b1D4",
-            videoId7: "hidden",
+            videoId7: "JRjxazXFPso",
             videoId8: "hidden",
             videoId9: "hidden",
             videoId10: "hidden",
@@ -113,7 +113,7 @@ export const Dust2Config = {
     CT : {
         videoIds : {
             videoId1: "iqckp6saP9A",
-            videoId2: "hidden",
+            videoId2: "lx3sH9EbrQM",
             videoId3: "hidden",
             videoId4: "hidden",
             videoId5: "hidden",
