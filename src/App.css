@@ -28,6 +28,10 @@
     width: 300px;
 }
 
+.filter-image{
+    width: 25px;
+}
+
 .map-page-image{
     align-content: center;
     width: 300px;
@@ -59,4 +63,11 @@
 
 .marginTop {
     margin-top: 12px;
+}
+
+.roundedBorder{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 20px;
 }
