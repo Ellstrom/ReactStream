@@ -38,62 +38,62 @@ const MapPageSidebar = () => {
      */
     return (
         <div className="roundedBorder">
-                <div>
-                    <Container>
-                        <Row>
-                            <Col><FilterImage imageSrc={SmokeSrc} imageAlt="Smoke"/></Col>
-                            <Col><h3>Smoke</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <Row>
-                            <Col><FilterImage imageSrc={FlashSrc} imageAlt="Flash"/></Col>
-                            <Col><h3>Flash</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <Row>
-                            <Col><FilterImage imageSrc={MolotovSrc} imageAlt="Molotov"/></Col>
-                            <Col><h3>Molotov</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <Row>
-                            <Col><FilterImage imageSrc={GrenadeSrc} imageAlt="Grenade"/></Col>
-                            <Col><h3>Grenade</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <br/><br/>
-                        <Row>
-                            <Col><FilterImage imageSrc={CTSrc} imageAlt="CT"/></Col>
-                            <Col><h3>CT</h3></Col>
-                            <Col><ToggleCheckbox/> </Col>
-                        </Row>
-                        <Row>
-                            <Col><FilterImage imageSrc={TSrc} imageAlt="T"/></Col>
-                            <Col><h3>T</h3> </Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <Row>
-                            <Col><FilterImage imageSrc={StratSrc} imageAlt="Strat"/></Col>
-                            <Col><h3>Strats</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <br/><br/>
-                        <Row>
-                            <Col/>
-                            <Col><h3>A</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <Row>
-                            <Col/>
-                            <Col><h3>Mid</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                        <Row>
-                            <Col></Col>
-                            <Col><h3>B</h3></Col>
-                            <Col><ToggleCheckbox/></Col>
-                        </Row>
-                    </Container>
-                </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><FilterImage imageSrc={SmokeSrc} imageAlt="Smoke"/></td>
+                        <td><h3>Smoke</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <tr>
+                        <td><FilterImage imageSrc={FlashSrc} imageAlt="Flash"/></td>
+                        <td><h3>Flash</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <tr>
+                        <td><FilterImage imageSrc={MolotovSrc} imageAlt="Molotov"/></td>
+                        <td><h3>Molotov</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <tr>
+                        <td><FilterImage imageSrc={GrenadeSrc} imageAlt="Grenade"/></td>
+                        <td><h3>Grenade</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <br/><br/>
+                    <tr>
+                        <td><FilterImage imageSrc={CTSrc} imageAlt="CT"/></td>
+                        <td><h3>CT</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <tr>
+                        <td><FilterImage imageSrc={TSrc} imageAlt="T"/></td>
+                        <td><h3>T</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <tr>
+                        <td><FilterImage imageSrc={StratSrc} imageAlt="Strat"/></td>
+                        <td><h3>Strats</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <br/><br/>
+                    <tr>
+                        <td></td>
+                        <td><h3>A</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><h3>Mid</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><h3>B</h3></td>
+                        <td className="paddingLeft"><ToggleCheckbox/></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import YoutubeComponent from "./YoutubeComponent";
 
 class ParentYoutubeComponent extends React.Component {
     render() {
-        if(this.props.videoId1 !== "hidden" && this.props.videoId2 !== "hidden"){
+        if(!this.props.hidden && this.props.videoId1 !== "hidden" && this.props.videoId2 !== "hidden"){
             return (
                 <tr>
                     <td>
@@ -14,7 +14,7 @@ class ParentYoutubeComponent extends React.Component {
                     </td>
                 </tr>
             )
-        }else if(this.props.videoId1 !== "hidden"){
+        }else if(!this.props.hidden && this.props.videoId1 !== "hidden"){
             return (
                 <tr>
                     <td>

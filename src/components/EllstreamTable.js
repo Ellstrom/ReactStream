@@ -291,11 +291,11 @@ class EllstreamTable extends React.Component {
                                                         <div>
                                                             <table>
                                                                 <tbody>
-                                                                <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId1} videoId2={this.props.props.executes.execute_5.videoIds.videoId2}/>
-                                                                <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId3} videoId2={this.props.props.executes.execute_5.videoIds.videoId4}/>
-                                                                <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId5} videoId2={this.props.props.executes.execute_5.videoIds.videoId6}/>
-                                                                <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId7} videoId2={this.props.props.executes.execute_5.videoIds.videoId8}/>
-                                                                <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId9} videoId2={this.props.props.executes.execute_5.videoIds.videoId10}/>
+                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId1} videoId2={this.props.props.executes.execute_5.videoIds.videoId2}/>
+                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId3} videoId2={this.props.props.executes.execute_5.videoIds.videoId4}/>
+                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId5} videoId2={this.props.props.executes.execute_5.videoIds.videoId6}/>
+                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId7} videoId2={this.props.props.executes.execute_5.videoIds.videoId8}/>
+                                                                    <ParentYoutubeComponent videoId1={this.props.props.executes.execute_5.videoIds.videoId9} videoId2={this.props.props.executes.execute_5.videoIds.videoId10}/>
                                                                 </tbody>
                                                             </table>
                                                         </div>

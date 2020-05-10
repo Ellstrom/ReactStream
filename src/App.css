@@ -71,3 +71,19 @@
     padding: 20px;
     margin-left: 20px;
 }
+
+.paddingLeft{
+    padding-left: 10px;
+}
+
+.twoColumns {
+    columns: 2;
+    list-style-type:none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
