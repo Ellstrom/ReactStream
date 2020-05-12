@@ -3,17 +3,31 @@ import EllstreamTable from "./EllstreamTable";
 import ContentGrid from "./ContentGrid";
 import MapPageImage from "./MapPageImage";
 import MapPageSidebar from "./MapPageSidebar";
-import {Container, Col, Row} from "react-bootstrap";
 
 const MapPage = ({mapName, mapConfig, mapSrc}) => {
     return (
         <div>
-            {/*<Container>*/}
+            <div>
+                <MapPageImage imageSrc={mapSrc} mapName={mapName}/>
+                <br/><br/>
+            </div>
+            <div className="grid-container-map-page">
+                <div>
+                    <MapPageSidebar/>
+                </div>
+                <div>
+                    <div id={mapName}>
+                        <ContentGrid props={mapConfig}/>
+                        <EllstreamTable props={mapConfig}/>
+                    </div>
+                </div>
+            </div>
+            {/*<Container>
                 <Row>
-                    <Col sm md lg xl="2">
+                    <Col>
                         <MapPageSidebar/>
                     </Col>
-                    <Col sm md lg xl="8">
+                    <Col>
                         <div id={mapName}>
                             <MapPageImage imageSrc={mapSrc} mapName={mapName}/>
                             <br/>
@@ -22,7 +36,9 @@ const MapPage = ({mapName, mapConfig, mapSrc}) => {
                         </div>
                     </Col>
                 </Row>
-            {/*</Container>*/}
+            </Container>*/}
+
+
         </div>
     );
 };
