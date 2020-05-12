@@ -1,22 +1,39 @@
-import React, {useState} from 'react'
+import React, {useContext, useMemo, useState} from 'react'
 import { Table } from "react-bootstrap";
 import { FaAngleDown, FaAngleUp} from 'react-icons/fa';
 import ParentYoutubeComponent from "./ParentYoutubeComponent";
 import { Container, Row, Col } from "react-bootstrap";
+import { FilterContext } from "./FilterContext";
 import YoutubeComponent from "./YoutubeComponent";
-
 
 const ContentGrid = (props) => {
 
-    const [modalIsOpen, setModalIsOpen] = useState(false)
+    const { isSmokeVisible } = useContext(FilterContext);
+
 
     return (
-        <div className="grid-container-videos">
-            <YoutubeComponent hidden={false} videoId={props.props.executes.execute_1.videoIds.videoId1}/>
-            <YoutubeComponent videoId={props.props.executes.execute_1.videoIds.videoId2}/>
-            <YoutubeComponent videoId={props.props.executes.execute_1.videoIds.videoId1}/>
-            <YoutubeComponent videoId={props.props.executes.execute_1.videoIds.videoId2}/>
+        <div>
+            {/*
+            <div>
+                <button onClick={() => setSmokeVisible(true)}>SHOW SMOKES</button>
+                <button onClick={() => setSmokeVisible(false)}>HIDE SMOKES</button>
+            </div>
+            <div>
+                <button onClick={() => setFlashVisible(true)}>SHOW FLASHES</button>
+                <button onClick={() => setFlashVisible(false)}>HIDE FLASHES</button>
+            </div>
+            */}
+            <div className="grid-container-videos">
+
+                <YoutubeComponent visible={ isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId1}/>
+                <YoutubeComponent visible={ isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId2}/>
+                {/*
+                <YoutubeComponent visible={isFlashVisible} videoId={props.props.executes.execute_1.videoIds.videoId1}/>
+                <YoutubeComponent visible={isSmokeVisible && isFlashVisible} videoId={props.props.executes.execute_1.videoIds.videoId2}/>
+                */}
+            </div>
         </div>
+
     )
 
     /*

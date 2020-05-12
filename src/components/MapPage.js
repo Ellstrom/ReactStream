@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useMemo, useState} from 'react';
 import EllstreamTable from "./EllstreamTable";
 import ContentGrid from "./ContentGrid";
 import MapPageImage from "./MapPageImage";
 import MapPageSidebar from "./MapPageSidebar";
+import {FilterContext} from "./FilterContext";
 
 const MapPage = ({mapName, mapConfig, mapSrc}) => {
+
+    const [isSmokeVisible, setSmokeVisible] = useState(true);
+    const providerValue = useMemo(() => ({isSmokeVisible, setSmokeVisible}), [isSmokeVisible, setSmokeVisible]);
+
     return (
         <div>
             <div>
@@ -12,15 +17,17 @@ const MapPage = ({mapName, mapConfig, mapSrc}) => {
                 <br/><br/>
             </div>
             <div className="grid-container-map-page">
-                <div>
-                    <MapPageSidebar/>
-                </div>
-                <div>
-                    <div id={mapName}>
-                        <ContentGrid props={mapConfig}/>
-                        <EllstreamTable props={mapConfig}/>
+                <FilterContext.Provider value={providerValue}>
+                    <div>
+                        <MapPageSidebar/>
                     </div>
-                </div>
+                    <div>
+                        <div id={mapName}>
+                            <ContentGrid props={mapConfig}/>
+                            <EllstreamTable props={mapConfig}/>
+                        </div>
+                    </div>
+                </FilterContext.Provider>
             </div>
             {/*<Container>
                 <Row>

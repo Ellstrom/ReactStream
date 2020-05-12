@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useMemo} from 'react'
 import ToggleCheckbox from "./ToggleCheckbox"
 import FilterImage from "./FilterImage";
 import {Col, Container, Row} from "react-bootstrap"
@@ -9,11 +9,19 @@ import SmokeSrc from "../images/smoke.PNG";
 import FlashSrc from "../images/flash.PNG";
 import MolotovSrc from "../images/molotov.jpg";
 import GrenadeSrc from "../images/grenade.PNG";
+import { FilterContext } from "./FilterContext";
+
+
 
 
 const MapPageSidebar = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(false)
 
+  //  const filterContext = useContext(FilterContext);
+//    const { setFlashVisible, setSmokeVisible } = filterContext;
+
+    //const [isFlashVisible, setFlashVisible] = useState(false);
+
+    const [isSmokeVisible, setSmokeVisible] = useState(true);
     /*
             <button onClick={() => setModalIsOpen(true)}>Open modal</button>
 
@@ -38,6 +46,18 @@ const MapPageSidebar = () => {
      */
     return (
         <div className="sideBar">
+
+                <div>
+                    <button onClick={() => setSmokeVisible(true)}>SHOW SMOKES</button>
+                    <button onClick={() => setSmokeVisible(false)}>HIDE SMOKES</button>
+                </div>
+                {/*
+                <div>
+                    <button onClick={() => setFlashVisible(true)}>SHOW FLASHES</button>
+                    <button onClick={() => setFlashVisible(false)}>HIDE FLASHES</button>
+                </div>
+                */}
+
             <table>
                 <tbody>
                     <tr>
