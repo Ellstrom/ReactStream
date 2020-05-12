@@ -92,6 +92,13 @@
     padding: 10px;
 }
 
+.grid-container-home-page {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
 /* For desktop*/
 @media only screen and (min-width: 1700px) {
     /* .grid-container-videos { grid-template-columns: 645px 645px } */
@@ -118,6 +125,10 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+}
+
+@media only screen and (min-width: 1100px) {
+    .grid-container-home-page { grid-template-columns: 300px 300px 300px; }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

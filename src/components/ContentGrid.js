@@ -12,7 +12,7 @@ const ContentGrid = (props) => {
 
     return (
         <div className="grid-container-videos">
-            <YoutubeComponent videoId={props.props.executes.execute_1.videoIds.videoId1}/>
+            <YoutubeComponent hidden={false} videoId={props.props.executes.execute_1.videoIds.videoId1}/>
             <YoutubeComponent videoId={props.props.executes.execute_1.videoIds.videoId2}/>
             <YoutubeComponent videoId={props.props.executes.execute_1.videoIds.videoId1}/>
             <YoutubeComponent videoId={props.props.executes.execute_1.videoIds.videoId2}/>
