@@ -8,7 +8,20 @@ import {FilterContext} from "./FilterContext";
 const MapPage = ({mapName, mapConfig, mapSrc}) => {
 
     const [isSmokeVisible, setSmokeVisible] = useState(true);
-    const providerValue = useMemo(() => ({isSmokeVisible, setSmokeVisible}), [isSmokeVisible, setSmokeVisible]);
+    const [isFlashVisible, setFlashVisible] = useState(true);
+
+    const providerValue = useMemo(() => ({
+        isSmokeVisible,
+        setSmokeVisible,
+        isFlashVisible,
+        setFlashVisible}),
+        [
+            isSmokeVisible,
+            setSmokeVisible,
+            isFlashVisible,
+            setFlashVisible
+        ]
+    );
 
     return (
         <div>

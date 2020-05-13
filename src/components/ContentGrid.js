@@ -8,7 +8,7 @@ import YoutubeComponent from "./YoutubeComponent";
 
 const ContentGrid = (props) => {
 
-    const { isSmokeVisible } = useContext(FilterContext);
+    const { isSmokeVisible, isFlashVisible} = useContext(FilterContext);
 
 
     return (
@@ -27,10 +27,8 @@ const ContentGrid = (props) => {
 
                 <YoutubeComponent visible={ isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId1}/>
                 <YoutubeComponent visible={ isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId2}/>
-                {/*
                 <YoutubeComponent visible={isFlashVisible} videoId={props.props.executes.execute_1.videoIds.videoId1}/>
                 <YoutubeComponent visible={isSmokeVisible && isFlashVisible} videoId={props.props.executes.execute_1.videoIds.videoId2}/>
-                */}
             </div>
         </div>
 
