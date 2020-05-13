@@ -8,27 +8,39 @@ import YoutubeComponent from "./YoutubeComponent";
 
 const ContentGrid = (props) => {
 
-    const { isSmokeVisible, isFlashVisible} = useContext(FilterContext);
+    const {
+        isSmokeVisible,
+        isFlashVisible,
+        isMolotovVisible,
+        isGrenadeVisible,
+        isCTVisible,
+        isTVisible,
+        isStratVisible,
+        isAVisible,
+        isMidVisible,
+        isBVisible
+    } = useContext(FilterContext);
 
+    const showEveryThing = (
+        !isSmokeVisible
+        && !isFlashVisible
+        && !isMolotovVisible
+        && !isGrenadeVisible
+        && !isCTVisible
+        && !isTVisible
+        && !isStratVisible
+        && !isAVisible
+        && !isMidVisible
+        && !isBVisible
+    )
 
     return (
         <div>
-            {/*
-            <div>
-                <button onClick={() => setSmokeVisible(true)}>SHOW SMOKES</button>
-                <button onClick={() => setSmokeVisible(false)}>HIDE SMOKES</button>
-            </div>
-            <div>
-                <button onClick={() => setFlashVisible(true)}>SHOW FLASHES</button>
-                <button onClick={() => setFlashVisible(false)}>HIDE FLASHES</button>
-            </div>
-            */}
             <div className="grid-container-videos">
-
-                <YoutubeComponent visible={ isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId1}/>
-                <YoutubeComponent visible={ isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId2}/>
-                <YoutubeComponent visible={isFlashVisible} videoId={props.props.executes.execute_1.videoIds.videoId1}/>
-                <YoutubeComponent visible={isSmokeVisible && isFlashVisible} videoId={props.props.executes.execute_1.videoIds.videoId2}/>
+                <YoutubeComponent visible={ showEveryThing || isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId1}/>
+                <YoutubeComponent visible={ showEveryThing || isSmokeVisible } videoId={props.props.executes.execute_1.videoIds.videoId2}/>
+                <YoutubeComponent visible={ showEveryThing || isFlashVisible} videoId={props.props.executes.execute_1.videoIds.videoId1}/>
+                <YoutubeComponent visible={ showEveryThing || isSmokeVisible && isFlashVisible && isAVisible} videoId={props.props.executes.execute_1.videoIds.videoId2}/>
             </div>
         </div>
 

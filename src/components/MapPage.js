@@ -7,19 +7,62 @@ import {FilterContext} from "./FilterContext";
 
 const MapPage = ({mapName, mapConfig, mapSrc}) => {
 
-    const [isSmokeVisible, setSmokeVisible] = useState(true);
-    const [isFlashVisible, setFlashVisible] = useState(true);
+    const [isSmokeVisible, setSmokeVisible] = useState(false);
+    const [isFlashVisible, setFlashVisible] = useState(false);
+    const [isMolotovVisible, setMolotovVisible] = useState(false);
+    const [isGrenadeVisible, setGrenadeVisible] = useState(false);
+    const [isCTVisible, setCTVisible] = useState(false);
+    const [isTVisible, setTVisible] = useState(false);
+    const [isStratVisible, setStratVisible] = useState(false);
+    const [isAVisible, setAVisible] = useState(false);
+    const [isMidVisible, setMidVisible] = useState(false);
+    const [isBVisible, setBVisible] = useState(false);
 
-    const providerValue = useMemo(() => ({
-        isSmokeVisible,
-        setSmokeVisible,
-        isFlashVisible,
-        setFlashVisible}),
+    const providerValue = useMemo(() => (
+            {
+                isSmokeVisible,
+                isFlashVisible,
+                isMolotovVisible,
+                isGrenadeVisible,
+                isCTVisible,
+                isTVisible,
+                isStratVisible,
+                isAVisible,
+                isMidVisible,
+                isBVisible,
+                setSmokeVisible,
+                setFlashVisible,
+                setMolotovVisible,
+                setGrenadeVisible,
+                setCTVisible,
+                setTVisible,
+                setStratVisible,
+                setAVisible,
+                setMidVisible,
+                setBVisible
+            }
+        ),
         [
             isSmokeVisible,
-            setSmokeVisible,
             isFlashVisible,
-            setFlashVisible
+            isMolotovVisible,
+            isGrenadeVisible,
+            isCTVisible,
+            isTVisible,
+            isStratVisible,
+            isAVisible,
+            isMidVisible,
+            isBVisible,
+            setSmokeVisible,
+            setFlashVisible,
+            setMolotovVisible,
+            setGrenadeVisible,
+            setCTVisible,
+            setTVisible,
+            setStratVisible,
+            setAVisible,
+            setMidVisible,
+            setBVisible
         ]
     );
 
