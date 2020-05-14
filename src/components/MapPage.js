@@ -79,7 +79,7 @@ const MapPage = ({mapName, mapSrc}) => {
                     </div>
                     <div>
                         <div id={mapName}>
-                            <ContentGrid/>
+                            <ContentGrid mapName={mapName}/>
                         </div>
                     </div>
                 </FilterContext.Provider>
