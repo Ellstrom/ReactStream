@@ -23,9 +23,16 @@ const ContentGrid = (props) => {
     return (
         <div>
             <div className="grid-container-videos">
+                {this.state.data_execute_1.isExpanded ? (
+                    <FixaLogikFörAttEndastBehövaKonfaUppIConfigFilen size='1.5rem'/>
+                ) : (
+                    <FaAngleDown size='1.5rem'/>
+                )}
+
                 <YoutubeComponent videoId={getVideoIdOrHidden(videoConfig.videos.video_80)}/>
                 <YoutubeComponent videoId={getVideoIdOrHidden(videoConfig.videos.video_82)}/>
                 <YoutubeComponent videoId={getVideoIdOrHidden(videoConfig.videos.video_96)}/>
+
             </div>
         </div>
 
