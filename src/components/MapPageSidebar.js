@@ -96,6 +96,16 @@ const MapPageSidebar = () => {
                             />
                         </td>
                     </tr>
+                    <tr>
+                        <td><FilterImage imageSrc={StratSrc} imageAlt="Strat"/></td>
+                        <td><h3>Strat</h3></td>
+                        <td className="paddingLeft">
+                            <Checkbox
+                                toggle
+                                onChange={(formEvent, checkBoxProps)=> setStratVisible(checkBoxProps.checked)}
+                            />
+                        </td>
+                    </tr>
                     <br/><br/>
                     <tr>
                         <td><FilterImage imageSrc={CTSrc} imageAlt="CT"/></td>
@@ -145,17 +155,6 @@ const MapPageSidebar = () => {
                             <Checkbox
                                 toggle
                                 onChange={(formEvent, checkBoxProps)=> setBVisible(checkBoxProps.checked)}
-                            />
-                        </td>
-                    </tr>
-                    <br/><br/>
-                    <tr>
-                        <td><FilterImage imageSrc={StratSrc} imageAlt="Strat"/></td>
-                        <td><h3>Strats</h3></td>
-                        <td className="paddingLeft">
-                            <Checkbox
-                                toggle
-                                onChange={(formEvent, checkBoxProps)=> setStratVisible(checkBoxProps.checked)}
                             />
                         </td>
                     </tr>

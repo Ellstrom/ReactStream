@@ -64,21 +64,22 @@ const ContentGrid = (props) => {
     }
 
     function isVisible(video){
-        return !!(utilityMatches(video.utility)
+        return !!(utilityMatches(video.type)
             && teamMatches(video.team)
-            && locationMatches(video.location)
-            && stratMatches(video));
+            && locationMatches(video.location));
     }
 
-    function utilityMatches(utility){
-        return !!(((utility.isSmoke && isSmokeVisible)
-            || (utility.isFlash && isFlashVisible)
-            || (utility.isMolotov && isMolotovVisible)
-            || (utility.isGrenade && isGrenadeVisible))
+    function utilityMatches(type){
+        return !!(((type.isSmoke && isSmokeVisible)
+            || (type.isFlash && isFlashVisible)
+            || (type.isMolotov && isMolotovVisible)
+            || (type.isGrenade && isGrenadeVisible))
+            || (type.isStrat && isStratVisible)
             || (!isSmokeVisible
                 && !isFlashVisible
                 && !isMolotovVisible
-                && !isGrenadeVisible));
+                && !isGrenadeVisible
+                && !isStratVisible));
     }
 
     function teamMatches(team){
@@ -95,11 +96,6 @@ const ContentGrid = (props) => {
             || (!isAVisible
                 && !isMidVisible
                 && !isBVisible));
-    }
-
-    function stratMatches(video){
-        return !!((video.isStrat && isStratVisible)
-            || !isStratVisible);
     }
 
 }

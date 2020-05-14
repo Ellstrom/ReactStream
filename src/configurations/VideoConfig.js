@@ -4,11 +4,12 @@ export const VideoConfig = {
             map: "Mirage",
             name: "80 Mirage Execute A",
             videoId: "PplT1QDDA4c",
-            utility : {
+            type : {
                 isSmoke: false,
                 isFlash: false,
                 isMolotov: false,
                 isGrenade: false,
+                isStrat: true
             },
             team : {
                 isCT: false,
@@ -18,18 +19,18 @@ export const VideoConfig = {
                 isA: true,
                 isMid: false,
                 isB: false
-            },
-            isStrat: true
+            }
         },
         video_82 : {
             map: "Mirage",
             name: "82 Mirage Smoke CT From T Spawn",
             videoId: "kj3Koblbt3s",
-            utility : {
+            type : {
                 isSmoke: true,
                 isFlash: false,
                 isMolotov: false,
                 isGrenade: false,
+                isStrat: false
             },
             team : {
                 isCT: false,
@@ -39,8 +40,7 @@ export const VideoConfig = {
                 isA: true,
                 isMid: false,
                 isB: false
-            },
-            isStrat: false
+            }
         }
     }
 };
