@@ -1,4 +1,4 @@
-import React, {useState, useMemo, useContext} from 'react'
+import React, { useContext } from 'react'
 import FilterImage from "./FilterImage";
 import CTSrc from "../images/ct.png";
 import TSrc from "../images/t.png";
@@ -117,16 +117,6 @@ const MapPageSidebar = () => {
                             />
                         </td>
                     </tr>
-                    <tr>
-                        <td><FilterImage imageSrc={StratSrc} imageAlt="Strat"/></td>
-                        <td><h3>Strats</h3></td>
-                        <td className="paddingLeft">
-                            <Checkbox
-                                toggle
-                                onChange={(formEvent, checkBoxProps)=> setStratVisible(checkBoxProps.checked)}
-                            />
-                        </td>
-                    </tr>
                     <br/><br/>
                     <tr>
                         <td></td>
@@ -155,6 +145,17 @@ const MapPageSidebar = () => {
                             <Checkbox
                                 toggle
                                 onChange={(formEvent, checkBoxProps)=> setBVisible(checkBoxProps.checked)}
+                            />
+                        </td>
+                    </tr>
+                    <br/><br/>
+                    <tr>
+                        <td><FilterImage imageSrc={StratSrc} imageAlt="Strat"/></td>
+                        <td><h3>Strats</h3></td>
+                        <td className="paddingLeft">
+                            <Checkbox
+                                toggle
+                                onChange={(formEvent, checkBoxProps)=> setStratVisible(checkBoxProps.checked)}
                             />
                         </td>
                     </tr>

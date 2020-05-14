@@ -12,7 +12,7 @@ class YoutubeComponent extends React.Component {
             },
         };
 
-        if(this.props.visible && this.props.videoId1 !== "hidden"){
+        if(this.props.videoId !== "hidden"){
             return <YouTube videoId={this.props.videoId} opts={opts} onReady={this._onReady} />;
         }else{
             return null;

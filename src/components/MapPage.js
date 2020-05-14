@@ -5,7 +5,7 @@ import MapPageImage from "./MapPageImage";
 import MapPageSidebar from "./MapPageSidebar";
 import {FilterContext} from "./FilterContext";
 
-const MapPage = ({mapName, mapConfig, mapSrc}) => {
+const MapPage = ({mapName, mapSrc}) => {
 
     const [isSmokeVisible, setSmokeVisible] = useState(false);
     const [isFlashVisible, setFlashVisible] = useState(false);
@@ -79,29 +79,11 @@ const MapPage = ({mapName, mapConfig, mapSrc}) => {
                     </div>
                     <div>
                         <div id={mapName}>
-                            <ContentGrid props={mapConfig}/>
-                            <EllstreamTable props={mapConfig}/>
+                            <ContentGrid/>
                         </div>
                     </div>
                 </FilterContext.Provider>
             </div>
-            {/*<Container>
-                <Row>
-                    <Col>
-                        <MapPageSidebar/>
-                    </Col>
-                    <Col>
-                        <div id={mapName}>
-                            <MapPageImage imageSrc={mapSrc} mapName={mapName}/>
-                            <br/>
-                            <ContentGrid props={mapConfig}/>
-                            <EllstreamTable props={mapConfig}/>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>*/}
-
-
         </div>
     );
 };
