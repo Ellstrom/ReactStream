@@ -20,15 +20,25 @@ const ContentGrid = (props) => {
         isBVisible
     } = useContext(FilterContext);
 
-    const videoList = []
+    const videoList = [];
 
     for (const [index, value] of videoConfig.videos.entries()) {
-        videoList.push(<YoutubeComponent videoId={getVideoIdOrHidden(value)}/>)
+        if(getVideoIdOrHidden(value) !== "hidden"){
+            videoList.push(<YoutubeComponent videoId={getVideoIdOrHidden(value)}/>)
+        }
     }
 
     return (
-        <div className="grid-container-videos">
-            {videoList}
+        <div>
+            {(videoList.length > 0) ? (
+                <div className="grid-container-videos">
+                    {videoList}
+                </div>
+            ) : (
+                <div>
+                    <h2>No content :( <br/> Try to change the filter!</h2>
+                </div>
+            )}
         </div>
     );
 
