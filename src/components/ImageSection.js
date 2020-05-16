@@ -29,26 +29,6 @@ const ImageSection = () => (
             <Col xs="auto"><EllstreamImageWithLink imageSrc={AnubisSrc} mapName="Anubis"/></Col>
             <Col xs="auto"><EllstreamImageWithLink imageSrc={CacheSrc} mapName="Cache"/></Col>
             <Col xs="auto"><EllstreamImageWithLink imageSrc={TrainSrc} mapName="Train"/></Col>
-            {/*
-            <br/>
-            <Row className="justify-content-md-center">
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={MirageSrc} mapName="Mirage"/></Col>
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={InfernoSrc} mapName="Inferno"/></Col>
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={Dust2Src} mapName="Dust2"/></Col>
-            </Row>
-            <br/>
-            <Row className="justify-content-md-center">
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={NukeSrc} mapName="Nuke"/></Col>
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={VertigoSrc} mapName="Vertigo"/></Col>
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={OverpassSrc} mapName="Overpass"/></Col>
-            </Row>
-            <br/>
-            <Row className="justify-content-md-center">
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={AnubisSrc} mapName="Anubis"/></Col>
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={CacheSrc} mapName="Cache"/></Col>
-                <Col xs="auto"><EllstreamImageWithLink imageSrc={TrainSrc} mapName="Train"/></Col>
-            </Row>
-             */}
         </div>
     </div>
 )

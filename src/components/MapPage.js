@@ -1,5 +1,4 @@
 import React, {useMemo, useState} from 'react';
-import EllstreamTable from "./EllstreamTable";
 import ContentGrid from "./ContentGrid";
 import MapPageImage from "./MapPageImage";
 import MapPageSidebar from "./MapPageSidebar";
