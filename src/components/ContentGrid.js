@@ -17,7 +17,9 @@ const ContentGrid = (props) => {
         isStratVisible,
         isAVisible,
         isMidVisible,
-        isBVisible
+        isBVisible,
+        isYardVisible,
+        isRampVisible
     } = useContext(FilterContext);
 
     const videoList = [];
@@ -84,10 +86,14 @@ const ContentGrid = (props) => {
     function locationMatches(location){
         return !!(((location.isA && isAVisible)
             || (location.isMid && isMidVisible)
-            || (location.isB && isBVisible))
+            || (location.isB && isBVisible)
+            || (location.isYard && isYardVisible)
+            || (location.isRamp && isRampVisible))
             || (!isAVisible
                 && !isMidVisible
-                && !isBVisible));
+                && !isBVisible
+                && !isYardVisible
+                && !isRampVisible));
     }
 
 };

@@ -9,11 +9,11 @@ import MolotovSrc from "../images/molotov.jpg";
 import GrenadeSrc from "../images/grenade.PNG";
 import { FilterContext } from "./FilterContext";
 import { Checkbox } from "semantic-ui-react";
+import { LocationConfig} from "../configurations/LocationConfig";
+import {VideoConfig} from "../configurations/VideoConfig";
 
 
-
-
-const MapPageSidebar = () => {
+const MapPageSidebar = (props) => {
 
     /*
     Modal code, can be useful for showing calls
@@ -39,6 +39,8 @@ const MapPageSidebar = () => {
                         </Modal>
      */
 
+    const locationConfig = LocationConfig;
+
     const {
         setSmokeVisible,
         setFlashVisible,
@@ -50,6 +52,8 @@ const MapPageSidebar = () => {
         setAVisible,
         setMidVisible,
         setBVisible,
+        setYardVisible,
+        setRampVisible
     } = useContext(FilterContext);
 
     return (
@@ -138,26 +142,54 @@ const MapPageSidebar = () => {
                             />
                         </td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td><h3>Mid</h3></td>
-                        <td className="paddingLeft">
-                            <Checkbox
-                                toggle
-                                onChange={(formEvent, checkBoxProps)=> setMidVisible(checkBoxProps.checked)}
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><h3>B</h3></td>
-                        <td className="paddingLeft">
-                            <Checkbox
-                                toggle
-                                onChange={(formEvent, checkBoxProps)=> setBVisible(checkBoxProps.checked)}
-                            />
-                        </td>
-                    </tr>
+                    {locationConfig.maps[props.mapName].locationMidExists &&
+                        <tr>
+                            <td></td>
+                            <td><h3>Mid</h3></td>
+                            <td className="paddingLeft">
+                                <Checkbox
+                                    toggle
+                                    onChange={(formEvent, checkBoxProps) => setMidVisible(checkBoxProps.checked)}
+                                />
+                            </td>
+                        </tr>
+                    }
+                    {locationConfig.maps[props.mapName].locationBExists &&
+                        <tr>
+                            <td></td>
+                            <td><h3>B</h3></td>
+                            <td className="paddingLeft">
+                                <Checkbox
+                                    toggle
+                                    onChange={(formEvent, checkBoxProps) => setBVisible(checkBoxProps.checked)}
+                                />
+                            </td>
+                        </tr>
+                    }
+                    {locationConfig.maps[props.mapName].locationYardExists &&
+                        <tr>
+                            <td></td>
+                            <td><h3>Yard</h3></td>
+                            <td className="paddingLeft">
+                                <Checkbox
+                                    toggle
+                                    onChange={(formEvent, checkBoxProps)=> setYardVisible(checkBoxProps.checked)}
+                                />
+                            </td>
+                        </tr>
+                    }
+                    {locationConfig.maps[props.mapName].locationRampExists &&
+                        <tr>
+                            <td></td>
+                            <td><h3>Ramp</h3></td>
+                            <td className="paddingLeft">
+                                <Checkbox
+                                    toggle
+                                    onChange={(formEvent, checkBoxProps) => setRampVisible(checkBoxProps.checked)}
+                                />
+                            </td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>

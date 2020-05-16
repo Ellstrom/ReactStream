@@ -17,6 +17,8 @@ const MapPage = ({mapName, mapSrc}) => {
     const [isAVisible, setAVisible] = useState(false);
     const [isMidVisible, setMidVisible] = useState(false);
     const [isBVisible, setBVisible] = useState(false);
+    const [isYardVisible, setYardVisible] = useState(false);
+    const [isRampVisible, setRampVisible] = useState(false);
 
     const providerValue = useMemo(() => (
             {
@@ -30,6 +32,8 @@ const MapPage = ({mapName, mapSrc}) => {
                 isAVisible,
                 isMidVisible,
                 isBVisible,
+                isYardVisible,
+                isRampVisible,
                 setSmokeVisible,
                 setFlashVisible,
                 setMolotovVisible,
@@ -39,7 +43,9 @@ const MapPage = ({mapName, mapSrc}) => {
                 setStratVisible,
                 setAVisible,
                 setMidVisible,
-                setBVisible
+                setBVisible,
+                setYardVisible,
+                setRampVisible
             }
         ),
         [
@@ -53,6 +59,8 @@ const MapPage = ({mapName, mapSrc}) => {
             isAVisible,
             isMidVisible,
             isBVisible,
+            isYardVisible,
+            isRampVisible,
             setSmokeVisible,
             setFlashVisible,
             setMolotovVisible,
@@ -62,7 +70,9 @@ const MapPage = ({mapName, mapSrc}) => {
             setStratVisible,
             setAVisible,
             setMidVisible,
-            setBVisible
+            setBVisible,
+            setYardVisible,
+            setRampVisible
         ]
     );
 
@@ -75,7 +85,7 @@ const MapPage = ({mapName, mapSrc}) => {
             <div className="grid-container-map-page">
                 <FilterContext.Provider value={providerValue}>
                     <div>
-                        <MapPageSidebar/>
+                        <MapPageSidebar mapName={mapName}/>
                     </div>
                     <div>
                         <div id={mapName}>

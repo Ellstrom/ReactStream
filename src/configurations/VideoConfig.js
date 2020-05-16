@@ -16,10 +16,12 @@ export const VideoConfig = {
                 isCT: false,
                 isT: true,
             },
-            location :{
+            location : {
                 isA: true,
                 isMid: false,
-                isB: false
+                isB: false,
+                isYard: false,
+                isRamp: false
             }
         },
         {
@@ -38,14 +40,17 @@ export const VideoConfig = {
                 isCT: false,
                 isT: true,
             },
-            location :{
+            location : {
                 isA: true,
                 isMid: false,
-                isB: false
+                isB: false,
+                isYard: false,
+                isRamp: false
             }
         },
         {
             mapName: "Inferno",
+            videoNumber: "96",
             name: "96 Inferno Execute A",
             videoId: "2pFk-FUGnZA",
             type : {
@@ -59,10 +64,36 @@ export const VideoConfig = {
                 isCT: false,
                 isT: true,
             },
-            location :{
+            location : {
                 isA: true,
                 isMid: false,
-                isB: false
+                isB: false,
+                isYard: false,
+                isRamp: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "111",
+            name: "111 Nuke Smoke outside main on yard\n",
+            videoId: "sizrHwG4sgY",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: true,
+                isRamp: false
             }
         }
     ]
