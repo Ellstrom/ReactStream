@@ -1,7 +1,8 @@
 export const VideoConfig = {
-    videos : {
-        video_80 : {
+    videos : [
+        {
             mapName: "Mirage",
+            videoNumber: "80",
             name: "80 Mirage Execute A",
             videoId: "PplT1QDDA4c",
             type : {
@@ -21,8 +22,9 @@ export const VideoConfig = {
                 isB: false
             }
         },
-        video_82 : {
+        {
             mapName: "Mirage",
+            videoNumber: "82",
             name: "82 Mirage Smoke CT From T Spawn",
             videoId: "kj3Koblbt3s",
             type : {
@@ -42,7 +44,7 @@ export const VideoConfig = {
                 isB: false
             }
         },
-        video_96 : {
+        {
             mapName: "Inferno",
             name: "96 Inferno Execute A",
             videoId: "2pFk-FUGnZA",
@@ -62,6 +64,6 @@ export const VideoConfig = {
                 isMid: false,
                 isB: false
             }
-        },
-    }
+        }
+    ]
 };
