@@ -18,6 +18,7 @@ const MapPage = ({mapName, mapSrc}) => {
     const [isBVisible, setBVisible] = useState(false);
     const [isYardVisible, setYardVisible] = useState(false);
     const [isRampVisible, setRampVisible] = useState(false);
+    const [isVentVisible, setVentVisible] = useState(false);
 
     const providerValue = useMemo(() => (
             {
@@ -33,6 +34,7 @@ const MapPage = ({mapName, mapSrc}) => {
                 isBVisible,
                 isYardVisible,
                 isRampVisible,
+                isVentVisible,
                 setSmokeVisible,
                 setFlashVisible,
                 setMolotovVisible,
@@ -44,7 +46,8 @@ const MapPage = ({mapName, mapSrc}) => {
                 setMidVisible,
                 setBVisible,
                 setYardVisible,
-                setRampVisible
+                setRampVisible,
+                setVentVisible
             }
         ),
         [
@@ -60,6 +63,7 @@ const MapPage = ({mapName, mapSrc}) => {
             isBVisible,
             isYardVisible,
             isRampVisible,
+            isVentVisible,
             setSmokeVisible,
             setFlashVisible,
             setMolotovVisible,
@@ -71,7 +75,8 @@ const MapPage = ({mapName, mapSrc}) => {
             setMidVisible,
             setBVisible,
             setYardVisible,
-            setRampVisible
+            setRampVisible,
+            setVentVisible
         ]
     );
 

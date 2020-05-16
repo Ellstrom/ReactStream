@@ -53,7 +53,8 @@ const MapPageSidebar = (props) => {
         setMidVisible,
         setBVisible,
         setYardVisible,
-        setRampVisible
+        setRampVisible,
+        setVentVisible
     } = useContext(FilterContext);
 
     return (
@@ -186,6 +187,18 @@ const MapPageSidebar = (props) => {
                                 <Checkbox
                                     toggle
                                     onChange={(formEvent, checkBoxProps) => setRampVisible(checkBoxProps.checked)}
+                                />
+                            </td>
+                        </tr>
+                    }
+                    {locationConfig.maps[props.mapName].locationVentExists &&
+                        <tr>
+                            <td></td>
+                            <td><h3>Vent</h3></td>
+                            <td className="paddingLeft">
+                                <Checkbox
+                                    toggle
+                                    onChange={(formEvent, checkBoxProps) => setVentVisible(checkBoxProps.checked)}
                                 />
                             </td>
                         </tr>
