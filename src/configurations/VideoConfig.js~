@@ -1,0 +1,1775 @@
+export const VideoConfig = {
+    videos : [
+        {
+            mapName: "Nuke",
+            videoNumber: "1",
+            name: "1 Nuke Smoke Yard - First",
+            videoId: "PGxBJW8wgTI",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: true,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "2",
+            name: "2 Nuke Smoke Yard - Second",
+            videoId: "pFvnPhouyPU",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: true,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "3",
+            name: "3 Nuke Smoke Yard - Third",
+            videoId: "tu1XS7Rf0ZE",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: true,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "4",
+            name: "4 Nuke Grenade Squeaky Not Vent From Lobby",
+            videoId: "473fxB4-4Hs",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: true,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: true
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "5",
+            name: "5 Nuke Smoke for ventrush from outside",
+            videoId: "THstLeP_DLY",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: true
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "6",
+            name: "6 Nuke Molotov Blue from outside\n",
+            videoId: "sppkqWTJK_k",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: true,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: true
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "7",
+            name: "7 Nuke Grenade Squeaky and vent from lobby",
+            videoId: "hUYHDO55oAY",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: true,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: true
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "8",
+            name: "8 Nuke Smoke Ramp - First",
+            videoId: "CuMYlnLbALA",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: true,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "9",
+            name: "9 Nuke Smoke Ramp - Second",
+            videoId: "KYnal__6byk",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: true,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "10",
+            name: "10 Nuke Flash Ramp\n",
+            videoId: "Zvo3Y8i1AJo",
+            type : {
+                isSmoke: false,
+                isFlash: true,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: true,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "11",
+            name: "11 Nuke Smoke heaven from outside",
+            videoId: "dP52gOGkBeY",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "12",
+            name: "12 Nuke Molotov fake vent from main",
+            videoId: "wtw4ZBAdgRI",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: true,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "13",
+            name: "13 Nuke Smoke garage",
+            videoId: "hwXNF2FHGSo",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: true,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "16",
+            name: "16 Nuke Molotov anti-ventrush",
+            videoId: "IAOGZT9DvLY",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: true,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: true,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: true
+            }
+        },
+        {
+            mapName: "Vertigo",
+            videoNumber: "18",
+            name: "18 Vertigo Execute A",
+            videoId: "OWiXEilotW0",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: true
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Vertigo",
+            videoNumber: "19",
+            name: "19 Vertigo Smoke rightside A",
+            videoId: "2m9DQka5IF8",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Vertigo",
+            videoNumber: "20",
+            name: "20 Vertigo Smoke leftside A",
+            videoId: "y-C2oILeeH4",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Vertigo",
+            videoNumber: "21",
+            name: "21 Vertigo Molotov headshot A\n",
+            videoId: "T-Isaq_CjMg",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: true,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Vertigo",
+            videoNumber: "28",
+            name: "28 Vertigo Molotov A sandbags retake\n",
+            videoId: "CKslL3rqiZc",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: true,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: true,
+                isT: false,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Mirage",
+            videoNumber: "31",
+            name: "31 Mirage Smoke A-stairs from t-spawn\n",
+            videoId: "x4VHHS2HtlQ",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Mirage",
+            videoNumber: "32",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "jJ9L1_Pl3uo",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "33",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "34",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "35",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "36",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "37",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "38",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "39",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "40",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "41",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "42",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "43",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "44",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "45",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "47",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "48",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "49",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "50",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "51",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "52",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "53",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "54",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "55",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "56",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "57",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "58",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "59",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "60",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "61",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "62",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "63",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "64",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "65",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "66",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "67",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "68",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "69",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "70",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "71",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "72",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "73",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "74",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "75",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "76",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "77",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "78",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoNumber: "79",
+            name: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            videoId: "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: false,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Mirage",
+            videoNumber: "80",
+            name: "80 Mirage Execute A",
+            videoId: "PplT1QDDA4c",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: true
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Mirage",
+            videoNumber: "82",
+            name: "82 Mirage Smoke CT From T Spawn",
+            videoId: "kj3Koblbt3s",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Inferno",
+            videoNumber: "96",
+            name: "96 Inferno Execute A",
+            videoId: "2pFk-FUGnZA",
+            type : {
+                isSmoke: false,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: true
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: true,
+                isMid: false,
+                isB: false,
+                isYard: false,
+                isRamp: false,
+                isVent: false
+            }
+        },
+        {
+            mapName: "Nuke",
+            videoNumber: "111",
+            name: "111 Nuke Smoke outside main on yard\n",
+            videoId: "sizrHwG4sgY",
+            type : {
+                isSmoke: true,
+                isFlash: false,
+                isMolotov: false,
+                isGrenade: false,
+                isStrat: false
+            },
+            team : {
+                isCT: false,
+                isT: true,
+            },
+            location : {
+                isA: false,
+                isMid: false,
+                isB: false,
+                isYard: true,
+                isRamp: false,
+                isVent: false
+            }
+        }
+    ]
+};
