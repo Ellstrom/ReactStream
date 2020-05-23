@@ -10,8 +10,6 @@ import GrenadeSrc from "../images/grenade.PNG";
 import { FilterContext } from "./FilterContext";
 import { Checkbox } from "semantic-ui-react";
 import { LocationConfig} from "../configurations/LocationConfig";
-import {VideoConfig} from "../configurations/VideoConfig";
-
 
 const MapPageSidebar = (props) => {
 
@@ -111,7 +109,11 @@ const MapPageSidebar = (props) => {
                             />
                         </td>
                     </tr>
-                    <br/><br/>
+                    <tr>
+                        <td>
+                            <br/><br/>
+                        </td>
+                    </tr>
                     <tr>
                         <td><FilterImage imageSrc={CTSrc} imageAlt="CT"/></td>
                         <td><h3>CT</h3></td>
@@ -132,7 +134,11 @@ const MapPageSidebar = (props) => {
                             />
                         </td>
                     </tr>
-                    <br/><br/>
+                    <tr>
+                        <td>
+                            <br/><br/>
+                        </td>
+                    </tr>
                     <tr>
                         <td></td>
                         <td><h3>A</h3></td>

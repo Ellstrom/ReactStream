@@ -1,4 +1,4 @@
-import React, {useContext, useMemo, useState} from 'react'
+import React, { useContext } from 'react'
 import { FilterContext } from "./FilterContext";
 import YoutubeComponent from "./YoutubeComponent";
 import { VideoConfig } from "../configurations/VideoConfig"
@@ -25,7 +25,7 @@ const ContentGrid = (props) => {
 
     const videoList = [];
 
-    for (const [index, value] of videoConfig.videos.entries()) {
+    for (const [, value] of videoConfig.videos.entries()) {
         if(getVideoIdOrHidden(value) !== "hidden"){
             videoList.push(<YoutubeComponent videoId={getVideoIdOrHidden(value)}/>)
         }

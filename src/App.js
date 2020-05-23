@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import EllstreamNavbar from "./components/EllstreamNavbar";
+import { useDarkMode } from './components/useDarkMode';
+import Toggle from "./components/toggle";
 import MapPage from "./components/MapPage";
 import HomePage from "./components/HomePage";
 import MirageSrc from "./images/mirage/mirage.jpg";
@@ -13,32 +15,32 @@ import OverpassSrc from "./images/overpass/overpass.jpg";
 import TrainSrc from "./images/train/train.jpg";
 import AnubisSrc from "./images/anubis/anubis.jpg";
 import Feedback from "./components/Feedback";
-import { ThemeProvider} from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme} from "./components/theme";
 import { GlobalStyles} from "./components/global";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
 
-    const [theme, setTheme] = useState('light');
+    const [theme, toggleTheme, componentMounted] = useDarkMode();
+    const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-    const toggleTheme = () => {
-        if(theme === 'light') {
-            setTheme('dark');
-        }else{
-            setTheme('light');
-        }
+    if (!componentMounted) {
+        return <div />
     };
 
     return (
-        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+        <ThemeProvider theme={themeMode}>
             <Router>
                 <div className="App">
                     <EllstreamNavbar/>
                     <>
                         <GlobalStyles />
-                        <button onClick={toggleTheme}> Toggle theme</button>
-                        <h1>It's a light theme!</h1>
+                        <div className="grid-container-theme">
+                            <div></div>
+                            <div></div>
+                            <div><Toggle className="" theme={theme} toggleTheme={toggleTheme} /></div>
+                        </div>
                     </>
                     <Switch>
                         <Route path="/" exact component={HomePage}/>
@@ -51,7 +53,7 @@ function App() {
                         <Route path="/Anubis" component={() => <MapPage mapName="Anubis" mapSrc={AnubisSrc}/>}/>
                         <Route path="/Cache" component={() => <MapPage mapName="Cache" mapSrc={CacheSrc}/>}/>
                         <Route path="/Train" component={() => <MapPage mapName="Train" mapSrc={TrainSrc}/>}/>
-                        <Route path="/Feedback" component={Feedback}/>
+                        <Route path="/Feedback" component={ Feedback }/>
                     </Switch>
                 </div>
             </Router>

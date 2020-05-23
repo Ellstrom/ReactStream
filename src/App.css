@@ -100,6 +100,13 @@
     padding: 10px;
 }
 
+.grid-container-theme {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
 @media only screen and (min-width: 1700px) {
      .grid-container-videos { grid-template-columns: 620px auto }
 }
