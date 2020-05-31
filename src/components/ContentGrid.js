@@ -39,7 +39,7 @@ const ContentGrid = (props) => {
                 </div>
             ) : (
                 <div>
-                    <h2>No content :( <br/> Try to change the filter!</h2>
+                    <h2>No content, try to change the filter! <br/> If you think a certain video should belong here, send it as feedback :) <br/> <a href="mailto:ellstream44@hotmail.com">ellstream44@hotmail.com</a></h2>
                 </div>
             )}
         </div>
