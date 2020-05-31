@@ -10,36 +10,14 @@ import GrenadeSrc from "../images/grenade.PNG";
 import { FilterContext } from "./FilterContext";
 import { Checkbox } from "semantic-ui-react";
 import { LocationConfig} from "../configurations/LocationConfig";
+import { FormControl } from "react-bootstrap";
 
 const MapPageSidebar = (props) => {
-
-    /*
-    Modal code, can be useful for showing calls
-            <button onClick={() => setModalIsOpen(true)}>Open modal</button>
-
-            <Modal
-                isOpen={modalIsOpen}
-                shouldCloseOnOverlayClick={false}
-                onRequestClose={() => setModalIsOpen(false)}
-                style={
-                    {
-                        overlay: {
-                            backgroundColor: 'grey'
-                        },
-                        content: {
-                            color: 'orange'
-                        }
-                    }
-                }
-            >
-
-            <button onClick={() => setModalIsOpen(false)}>Close</button>
-                        </Modal>
-     */
 
     const locationConfig = LocationConfig;
 
     const {
+        searchContentChanged,
         setSmokeVisible,
         setFlashVisible,
         setMolotovVisible,
@@ -57,6 +35,14 @@ const MapPageSidebar = (props) => {
 
     return (
         <div className="sideBar">
+            <div className="searchBar">
+                <FormControl
+                    onChange={(event) => searchContentChanged(event.target.value)}
+                    type="text"
+                    placeholder="Search"
+                    className="mr-sm-2"
+                />
+            </div>
             <table>
                 <tbody>
                     <tr>

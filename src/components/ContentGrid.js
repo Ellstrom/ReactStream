@@ -8,6 +8,7 @@ const ContentGrid = (props) => {
     const videoConfig = VideoConfig;
 
     const {
+        searchContent,
         isSmokeVisible,
         isFlashVisible,
         isMolotovVisible,
@@ -54,7 +55,8 @@ const ContentGrid = (props) => {
     }
 
     function isVisible(video){
-        return !!(mapNameMatches(video.mapName)
+        return !!(searchContentMatches(video.name)
+            && mapNameMatches(video.mapName)
             && utilityMatches(video.type)
             && teamMatches(video.team)
             && locationMatches(video.location));
@@ -62,6 +64,11 @@ const ContentGrid = (props) => {
 
     function mapNameMatches(mapName){
         return mapName === props.mapName;
+    }
+
+    function searchContentMatches(videoName){
+        return (videoName.toLowerCase().includes(searchContent.toLowerCase())
+            || (searchContent === ''));
     }
 
     function utilityMatches(type){

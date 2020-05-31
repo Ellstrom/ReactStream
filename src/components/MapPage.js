@@ -2,10 +2,11 @@ import React, {useMemo, useState} from 'react';
 import ContentGrid from "./ContentGrid";
 import MapPageImage from "./MapPageImage";
 import MapPageSidebar from "./MapPageSidebar";
-import {FilterContext} from "./FilterContext";
+import { FilterContext } from "./FilterContext";
 
 const MapPage = ({mapName, mapSrc}) => {
 
+    const [searchContent, searchContentChanged] = useState('');
     const [isSmokeVisible, setSmokeVisible] = useState(false);
     const [isFlashVisible, setFlashVisible] = useState(false);
     const [isMolotovVisible, setMolotovVisible] = useState(false);
@@ -22,6 +23,7 @@ const MapPage = ({mapName, mapSrc}) => {
 
     const providerValue = useMemo(() => (
             {
+                searchContent,
                 isSmokeVisible,
                 isFlashVisible,
                 isMolotovVisible,
@@ -35,6 +37,7 @@ const MapPage = ({mapName, mapSrc}) => {
                 isYardVisible,
                 isRampVisible,
                 isVentVisible,
+                searchContentChanged,
                 setSmokeVisible,
                 setFlashVisible,
                 setMolotovVisible,
@@ -51,6 +54,7 @@ const MapPage = ({mapName, mapSrc}) => {
             }
         ),
         [
+            searchContent,
             isSmokeVisible,
             isFlashVisible,
             isMolotovVisible,
@@ -64,6 +68,7 @@ const MapPage = ({mapName, mapSrc}) => {
             isYardVisible,
             isRampVisible,
             isVentVisible,
+            searchContentChanged,
             setSmokeVisible,
             setFlashVisible,
             setMolotovVisible,
