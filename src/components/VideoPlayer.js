@@ -8,8 +8,6 @@ export const VideoPlayer = (props) => {
             {props.videoId !== "hidden" &&
                 <div>
                     <ReactPlayer
-                        width='640px'
-                        height='390px'
                         controls
                         url={videoUrl}
                     />
