@@ -26,8 +26,8 @@ const ContentGrid = (props) => {
     const videoList = [];
 
     for (const [, video] of videoConfig.videos.entries()) {
-        if(getVideoIdOrHidden(video) !== "hidden"){
-            videoList.push(<VideoPlayer key={video.videoNumber} videoId={getVideoIdOrHidden(video)}/>)
+        if(getVideoUrlOrHidden(video) !== "hidden"){
+            videoList.push(<VideoPlayer key={video.videoNumber} videoUrl={getVideoUrlOrHidden(video)}/>)
         }
     }
 
@@ -45,9 +45,9 @@ const ContentGrid = (props) => {
         </div>
     );
 
-    function getVideoIdOrHidden(video){
+    function getVideoUrlOrHidden(video){
         if(isVisible(video)){
-            return video.videoId;
+            return video.videoUrl;
         }else{
             return "hidden";
         }
