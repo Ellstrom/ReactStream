@@ -85,6 +85,10 @@
     padding-left: 10px;
 }
 
+.clearButton {
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
 
 .grid-container-videos {
     display: grid;

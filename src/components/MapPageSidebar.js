@@ -1,4 +1,5 @@
-import React, { useContext } from 'react'
+import React, {useContext, useState} from 'react'
+import { Button } from 'react-bootstrap'
 import FilterImage from "./FilterImage";
 import CTSrc from "../images/ct.png";
 import TSrc from "../images/t.png";
@@ -17,7 +18,7 @@ const MapPageSidebar = (props) => {
     const locationConfig = LocationConfig;
 
     const {
-        searchContentChanged,
+        setSearchContent,
         setSmokeVisible,
         setFlashVisible,
         setMolotovVisible,
@@ -33,11 +34,30 @@ const MapPageSidebar = (props) => {
         setVentVisible
     } = useContext(FilterContext);
 
+    const [searchContentValue, setSearchContentValue] = useState('');
+    const [isSmokeChecked, setSmokeChecked] = useState(false);
+    const [isFlashChecked, setFlashChecked] = useState(false);
+    const [isMolotovChecked, setMolotovChecked] = useState(false);
+    const [isGrenadeChecked, setGrenadeChecked] = useState(false);
+    const [isStratChecked, setStratChecked] = useState(false);
+    const [isCTChecked, setCTChecked] = useState(false);
+    const [isTChecked, setTChecked] = useState(false);
+    const [isAChecked, setAChecked] = useState(false);
+    const [isMidChecked, setMidChecked] = useState(false);
+    const [isBChecked, setBChecked] = useState(false);
+    const [isYardChecked, setYardChecked] = useState(false);
+    const [isRampChecked, setRampChecked] = useState(false);
+    const [isVentChecked, setVentChecked] = useState(false);
+
     return (
         <div className="sideBar">
             <div className="searchBar">
                 <FormControl
-                    onChange={(event) => searchContentChanged(event.target.value)}
+                    onChange={(event) => {
+                        setSearchContent(event.target.value);
+                        setSearchContentValue(event.target.value);
+                    }}
+                    value={searchContentValue}
                     type="text"
                     placeholder="Search"
                     className="mr-sm-2"
@@ -51,7 +71,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setSmokeVisible(checkBoxProps.checked)}
+                                checked={isSmokeChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setSmokeChecked(checkBoxProps.checked);
+                                    setSmokeVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -61,7 +85,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setFlashVisible(checkBoxProps.checked)}
+                                checked={isFlashChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setFlashChecked(checkBoxProps.checked);
+                                    setFlashVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -71,7 +99,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setMolotovVisible(checkBoxProps.checked)}
+                                checked={isMolotovChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setMolotovChecked(checkBoxProps.checked);
+                                    setMolotovVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -81,7 +113,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setGrenadeVisible(checkBoxProps.checked)}
+                                checked={isGrenadeChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setGrenadeChecked(checkBoxProps.checked);
+                                    setGrenadeVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -91,7 +127,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setStratVisible(checkBoxProps.checked)}
+                                checked={isStratChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setStratChecked(checkBoxProps.checked);
+                                    setStratVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -106,7 +146,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setCTVisible(checkBoxProps.checked)}
+                                checked={isCTChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setCTChecked(checkBoxProps.checked);
+                                    setCTVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -116,7 +160,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setTVisible(checkBoxProps.checked)}
+                                checked={isTChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setTChecked(checkBoxProps.checked);
+                                    setTVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -131,7 +179,11 @@ const MapPageSidebar = (props) => {
                         <td className="paddingLeft">
                             <Checkbox
                                 toggle
-                                onChange={(formEvent, checkBoxProps)=> setAVisible(checkBoxProps.checked)}
+                                checked={isAChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setAChecked(checkBoxProps.checked);
+                                    setAVisible(checkBoxProps.checked);
+                                }}
                             />
                         </td>
                     </tr>
@@ -142,7 +194,11 @@ const MapPageSidebar = (props) => {
                             <td className="paddingLeft">
                                 <Checkbox
                                     toggle
-                                    onChange={(formEvent, checkBoxProps) => setMidVisible(checkBoxProps.checked)}
+                                    checked={isMidChecked}
+                                    onChange={(formEvent, checkBoxProps) => {
+                                        setMidChecked(checkBoxProps.checked);
+                                        setMidVisible(checkBoxProps.checked);
+                                    }}
                                 />
                             </td>
                         </tr>
@@ -154,7 +210,11 @@ const MapPageSidebar = (props) => {
                             <td className="paddingLeft">
                                 <Checkbox
                                     toggle
-                                    onChange={(formEvent, checkBoxProps) => setBVisible(checkBoxProps.checked)}
+                                    checked={isBChecked}
+                                    onChange={(formEvent, checkBoxProps) => {
+                                        setBChecked(checkBoxProps.checked);
+                                        setBVisible(checkBoxProps.checked);
+                                    }}
                                 />
                             </td>
                         </tr>
@@ -166,7 +226,11 @@ const MapPageSidebar = (props) => {
                             <td className="paddingLeft">
                                 <Checkbox
                                     toggle
-                                    onChange={(formEvent, checkBoxProps)=> setYardVisible(checkBoxProps.checked)}
+                                    checked={isYardChecked}
+                                    onChange={(formEvent, checkBoxProps) => {
+                                        setYardChecked(checkBoxProps.checked);
+                                        setYardVisible(checkBoxProps.checked);
+                                    }}
                                 />
                             </td>
                         </tr>
@@ -178,7 +242,11 @@ const MapPageSidebar = (props) => {
                             <td className="paddingLeft">
                                 <Checkbox
                                     toggle
-                                    onChange={(formEvent, checkBoxProps) => setRampVisible(checkBoxProps.checked)}
+                                    checked={isRampChecked}
+                                    onChange={(formEvent, checkBoxProps) => {
+                                        setRampChecked(checkBoxProps.checked);
+                                        setRampVisible(checkBoxProps.checked);
+                                    }}
                                 />
                             </td>
                         </tr>
@@ -190,13 +258,54 @@ const MapPageSidebar = (props) => {
                             <td className="paddingLeft">
                                 <Checkbox
                                     toggle
-                                    onChange={(formEvent, checkBoxProps) => setVentVisible(checkBoxProps.checked)}
+                                    checked={isVentChecked}
+                                    onChange={(formEvent, checkBoxProps) => {
+                                        setVentChecked(checkBoxProps.checked);
+                                        setVentVisible(checkBoxProps.checked);
+                                    }}
                                 />
                             </td>
                         </tr>
                     }
                 </tbody>
             </table>
+            <div className="clearButton">
+                <Button
+                    variant="primary"
+                    onClick={() => {
+                        setSearchContent('');
+                        setSearchContentValue('')
+                        setSmokeChecked(false);
+                        setSmokeVisible(false);
+                        setFlashChecked(false);
+                        setFlashVisible(false);
+                        setMolotovChecked(false);
+                        setMolotovVisible(false);
+                        setGrenadeChecked(false);
+                        setGrenadeVisible(false);
+                        setStratChecked(false);
+                        setStratVisible(false);
+                        setCTChecked(false);
+                        setCTVisible(false);
+                        setTChecked(false);
+                        setTVisible(false);
+                        setAChecked(false);
+                        setAVisible(false);
+                        setMidChecked(false);
+                        setMidVisible(false);
+                        setBChecked(false);
+                        setBVisible(false);
+                        setYardChecked(false);
+                        setYardVisible(false);
+                        setRampChecked(false);
+                        setRampVisible(false);
+                        setVentChecked(false);
+                        setVentVisible(false);
+                    }}>
+
+                    Clear filter
+                </Button>
+            </div>
         </div>
     )
 }

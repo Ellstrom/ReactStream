@@ -6,7 +6,7 @@ import { FilterContext } from "./FilterContext";
 
 const MapPage = ({mapName, mapSrc}) => {
 
-    const [searchContent, searchContentChanged] = useState('');
+    const [searchContent, setSearchContent] = useState('');
     const [isSmokeVisible, setSmokeVisible] = useState(false);
     const [isFlashVisible, setFlashVisible] = useState(false);
     const [isMolotovVisible, setMolotovVisible] = useState(false);
@@ -37,7 +37,7 @@ const MapPage = ({mapName, mapSrc}) => {
                 isYardVisible,
                 isRampVisible,
                 isVentVisible,
-                searchContentChanged,
+                setSearchContent,
                 setSmokeVisible,
                 setFlashVisible,
                 setMolotovVisible,
@@ -68,7 +68,7 @@ const MapPage = ({mapName, mapSrc}) => {
             isYardVisible,
             isRampVisible,
             isVentVisible,
-            searchContentChanged,
+            setSearchContent,
             setSmokeVisible,
             setFlashVisible,
             setMolotovVisible,
