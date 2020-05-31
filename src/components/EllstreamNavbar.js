@@ -5,8 +5,8 @@ const EllstreamNavbar = () => (
     <div id="Navbar">
         <br/><br/><br/><br/>
         <div className="sticky">
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="/">Home</Navbar.Brand>
+            <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+                <Nav.Link href="/">Home</Nav.Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
