@@ -24,7 +24,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: true
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Nuke",
@@ -50,33 +50,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: true
             },
-            utilityValue : 5
-        },
-        {
-            mapName: "Nuke",
-            videoNumber: "6",
-            name: "6 Nuke Molotov Blue from outside\n",
-            videoUrl: "https://www.youtube.com/watch?v=sppkqWTJK_k",
-            type : {
-                isSmoke: false,
-                isFlash: false,
-                isMolotov: true,
-                isGrenade: false,
-                isStrat: false
-            },
-            team : {
-                isCT: false,
-                isT: true,
-            },
-            location : {
-                isA: false,
-                isMid: false,
-                isB: false,
-                isYard: false,
-                isRamp: false,
-                isVent: true
-            },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Nuke",
@@ -102,7 +76,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: true
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Nuke",
@@ -128,7 +102,7 @@ export const VideoConfig = {
                 isRamp: true,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Nuke",
@@ -154,12 +128,12 @@ export const VideoConfig = {
                 isRamp: true,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 1
         },
         {
             mapName: "Nuke",
             videoNumber: "10",
-            name: "10 Nuke Flash Ramp\n",
+            name: "10 Nuke Flash Ramp",
             videoUrl: "https://www.youtube.com/watch?v=Zvo3Y8i1AJo",
             type : {
                 isSmoke: false,
@@ -180,33 +154,7 @@ export const VideoConfig = {
                 isRamp: true,
                 isVent: false
             },
-            utilityValue : 5
-        },
-        {
-            mapName: "Nuke",
-            videoNumber: "11",
-            name: "11 Nuke Smoke heaven from outside",
-            videoUrl: "https://www.youtube.com/watch?v=dP52gOGkBeY",
-            type : {
-                isSmoke: true,
-                isFlash: false,
-                isMolotov: false,
-                isGrenade: false,
-                isStrat: false
-            },
-            team : {
-                isCT: false,
-                isT: true,
-            },
-            location : {
-                isA: true,
-                isMid: false,
-                isB: false,
-                isYard: false,
-                isRamp: false,
-                isVent: false
-            },
-            utilityValue : 5
+            utilityValue : 1
         },
         {
             mapName: "Nuke",
@@ -232,7 +180,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 1
         },
         {
             mapName: "Nuke",
@@ -310,7 +258,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Vertigo",
@@ -336,7 +284,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Vertigo",
@@ -362,7 +310,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Vertigo",
@@ -388,7 +336,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Mirage",
@@ -414,7 +362,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 4
+            utilityValue : 5
         },
         {
             mapName: "Mirage",
@@ -466,12 +414,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "34",
-            name: "34 Mirage Molotov A-sandwich from t-ramp\n",
+            name: "34 Mirage Molotov A-sandwich from t-ramp",
             videoUrl: "https://www.youtube.com/watch?v=f7QQUCLhAlA",
             type : {
                 isSmoke: false,
@@ -492,12 +440,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Mirage",
             videoNumber: "35",
-            name: "35 Mirage Flash From TSpawn\n",
+            name: "35 Mirage Flash From TSpawn",
             videoUrl: "https://www.youtube.com/watch?v=iLv1JRjI3Ic",
             type : {
                 isSmoke: false,
@@ -518,12 +466,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "36",
-            name: "36 Mirage Smoke mid from tspawn\n",
+            name: "36 Mirage Smoke mid from tspawn",
             videoUrl: "https://www.youtube.com/watch?v=iTjelxItrkQ",
             type : {
                 isSmoke: true,
@@ -549,7 +497,7 @@ export const VideoConfig = {
         {
             mapName: "Mirage",
             videoNumber: "37",
-            name: "37 Mirage Smoke short from mid\n",
+            name: "37 Mirage Smoke short from mid",
             videoUrl: "https://www.youtube.com/watch?v=d7hZfOTw18E",
             type : {
                 isSmoke: true,
@@ -570,12 +518,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Mirage",
             videoNumber: "38",
-            name: "38 Mirage Molotov midwindow from mid boxes\n",
+            name: "38 Mirage Molotov midwindow from mid boxes",
             videoUrl: "https://www.youtube.com/watch?v=KgFYD4roW_8",
             type : {
                 isSmoke: false,
@@ -596,12 +544,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Mirage",
             videoNumber: "39",
-            name: "39 Mirage molotov A-dark from t-palace\n",
+            name: "39 Mirage molotov A-dark from t-palace",
             videoUrl: "https://www.youtube.com/watch?v=FOfG55xswsM",
             type : {
                 isSmoke: false,
@@ -622,12 +570,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Mirage",
             videoNumber: "40",
-            name: "40 Mirage Smoke midwindow from midboxes\n",
+            name: "40 Mirage Smoke midwindow from midboxes",
             videoUrl: "https://www.youtube.com/watch?v=ZLxzxRQFYl4",
             type : {
                 isSmoke: true,
@@ -648,12 +596,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "41",
-            name: "41 Mirage Smoke short from UG\n",
+            name: "41 Mirage Smoke short from UG",
             videoUrl: "https://www.youtube.com/watch?v=zA-CGZVTiXw",
             type : {
                 isSmoke: true,
@@ -674,12 +622,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Mirage",
             videoNumber: "42",
-            name: "42 Mirage Smoke connector from UG\n",
+            name: "42 Mirage Smoke connector from UG",
             videoUrl: "https://www.youtube.com/watch?v=51O2KXJZZoE",
             type : {
                 isSmoke: true,
@@ -700,39 +648,13 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Mirage",
             videoNumber: "44",
-            name: "44 Mirage Smoke B Midsite for safe plant\n",
+            name: "44 Mirage Smoke B Midsite for safe plant",
             videoUrl: "https://www.youtube.com/watch?v=kBSybnwO8VI",
-            type : {
-                isSmoke: true,
-                isFlash: false,
-                isMolotov: false,
-                isGrenade: false,
-                isStrat: false
-            },
-            team : {
-                isCT: false,
-                isT: true,
-            },
-            location : {
-                isA: false,
-                isMid: false,
-                isB: true,
-                isYard: false,
-                isRamp: false,
-                isVent: false
-            },
-            utilityValue : 5
-        },
-        {
-            mapName: "Mirage",
-            videoNumber: "45",
-            name: "45 Mirage Smoke B Graveyard\n",
-            videoUrl: "https://www.youtube.com/watch?v=RR0Vgb7rizM",
             type : {
                 isSmoke: true,
                 isFlash: false,
@@ -778,7 +700,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Mirage",
@@ -804,12 +726,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "48",
-            name: "48 Mirage Smoke B Shopwindow\n",
+            name: "48 Mirage Smoke B Shopwindow",
             videoUrl: "https://www.youtube.com/watch?v=39hFNZJ-y7Y",
             type : {
                 isSmoke: true,
@@ -830,12 +752,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "49",
-            name: "49 Mirage Smoke A Palace from dark\n",
+            name: "49 Mirage Smoke A Palace from dark",
             videoUrl: "https://www.youtube.com/watch?v=s_M9jt7Sk3s",
             type : {
                 isSmoke: true,
@@ -861,7 +783,7 @@ export const VideoConfig = {
         {
             mapName: "Mirage",
             videoNumber: "50",
-            name: "50 Mirage Smoke A Palace from connector\n",
+            name: "50 Mirage Smoke A Palace from connector",
             videoUrl: "https://www.youtube.com/watch?v=wvU333UtUTQ",
             type : {
                 isSmoke: true,
@@ -882,12 +804,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "51",
-            name: "51 Mirage Molotov A Site from jungle\n",
+            name: "51 Mirage Molotov A Site from jungle",
             videoUrl: "https://www.youtube.com/watch?v=P4b4q0DHXoE",
             type : {
                 isSmoke: false,
@@ -908,12 +830,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "52",
-            name: "52 Mirage Smoke B Apartments from site\n",
+            name: "52 Mirage Smoke B Apartments from site",
             videoUrl: "https://www.youtube.com/watch?v=40brWyXDbOw",
             type : {
                 isSmoke: true,
@@ -934,12 +856,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "53",
-            name: "53 Mirage Smoke connector oneway\n",
+            name: "53 Mirage Smoke connector oneway",
             videoUrl: "https://www.youtube.com/watch?v=kHCHdBH9Atk",
             type : {
                 isSmoke: true,
@@ -960,12 +882,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
             videoNumber: "54",
-            name: "54 Inferno Smoke Long\n",
+            name: "54 Inferno Smoke Long",
             videoUrl: "https://www.youtube.com/watch?v=B50IZFbF5sM",
             type : {
                 isSmoke: true,
@@ -986,12 +908,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Inferno",
             videoNumber: "55",
-            name: "55 Inferno Smoke short and boiler\n",
+            name: "55 Inferno Smoke short and boiler",
             videoUrl: "https://www.youtube.com/watch?v=OFtWJRc-RUg",
             type : {
                 isSmoke: true,
@@ -1012,12 +934,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
             videoNumber: "56",
-            name: "56 Inferno Smoke CT from banana\n",
+            name: "56 Inferno Smoke CT from banana",
             videoUrl: "https://www.youtube.com/watch?v=ymWPO7168kM",
             type : {
                 isSmoke: true,
@@ -1043,7 +965,7 @@ export const VideoConfig = {
         {
             mapName: "Inferno",
             videoNumber: "57",
-            name: "57 Inferno Smoke graveyard from logs\n",
+            name: "57 Inferno Smoke graveyard from logs",
             videoUrl: "https://www.youtube.com/watch?v=tssLy8l8810",
             type : {
                 isSmoke: true,
@@ -1068,7 +990,7 @@ export const VideoConfig = {
         },        {
             mapName: "Inferno",
             videoNumber: "58",
-            name: "58 Inferno Molotov B first barrels\n",
+            name: "58 Inferno Molotov B first barrels",
             videoUrl: "https://www.youtube.com/watch?v=STAXDITg5kY",
             type : {
                 isSmoke: false,
@@ -1089,12 +1011,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
             videoNumber: "59",
-            name: "59 Inferno Molotov B Quad\n",
+            name: "59 Inferno Molotov B Quad",
             videoUrl: "https://www.youtube.com/watch?v=dKELveVS-BY",
             type : {
                 isSmoke: false,
@@ -1115,7 +1037,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
@@ -1146,7 +1068,7 @@ export const VideoConfig = {
         {
             mapName: "Inferno",
             videoNumber: "61",
-            name: "61 Inferno A Retake\n",
+            name: "61 Inferno A Retake",
             videoUrl: "https://www.youtube.com/watch?v=60FoDARBNlI",
             type : {
                 isSmoke: false,
@@ -1167,12 +1089,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Inferno",
             videoNumber: "62",
-            name: "62 Inferno Flash B Solo\n",
+            name: "62 Inferno Flash B Solo",
             videoUrl: "https://www.youtube.com/watch?v=Qr8cNUfaUUw",
             type : {
                 isSmoke: false,
@@ -1193,12 +1115,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Inferno",
             videoNumber: "63",
-            name: "63 Inferno Molotov A Retake\n",
+            name: "63 Inferno Molotov A Retake",
             videoUrl: "https://www.youtube.com/watch?v=81DkJ6MRESw",
             type : {
                 isSmoke: false,
@@ -1219,12 +1141,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 1
         },
         {
             mapName: "Inferno",
             videoNumber: "64",
-            name: "64 Inferno Grenade A Retake\n",
+            name: "64 Inferno Grenade A Retake",
             videoUrl: "https://www.youtube.com/watch?v=phm6X9jIiP4",
             type : {
                 isSmoke: false,
@@ -1245,12 +1167,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 1
         },
         {
             mapName: "Mirage",
             videoNumber: "65",
-            name: "65 Mirage Molotov A Retake Sandwich from jungle\n",
+            name: "65 Mirage Molotov A Retake Sandwich from jungle",
             videoUrl: "https://www.youtube.com/watch?v=2sdVi78Blq0",
             type : {
                 isSmoke: false,
@@ -1271,12 +1193,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Mirage",
             videoNumber: "66",
-            name: "66 Mirage Smoke B Short from apartments\n",
+            name: "66 Mirage Smoke B Short from apartments",
             videoUrl: "https://www.youtube.com/watch?v=2DZORFSIaBQ",
             type : {
                 isSmoke: true,
@@ -1297,12 +1219,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Nuke",
             videoNumber: "67",
-            name: "67 Nuke Smoke Secret AntiYardExecute\n",
+            name: "67 Nuke Smoke Secret AntiYardExecute",
             videoUrl: "https://www.youtube.com/watch?v=wNA8BHxquAY",
             type : {
                 isSmoke: true,
@@ -1323,12 +1245,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Nuke",
             videoNumber: "68",
-            name: "68 Nuke Smoke A Heaven fromsite\n",
+            name: "68 Nuke Smoke A Heaven fromsite",
             videoUrl: "https://www.youtube.com/watch?v=O9L2y3zpTNY",
             type : {
                 isSmoke: true,
@@ -1354,7 +1276,7 @@ export const VideoConfig = {
         {
             mapName: "Nuke",
             videoNumber: "70",
-            name: "70 Nuke Execute A\n",
+            name: "70 Nuke Execute A",
             videoUrl: "https://www.youtube.com/watch?v=0n9ZTvoVsI0",
             type : {
                 isSmoke: false,
@@ -1380,7 +1302,7 @@ export const VideoConfig = {
         {
             mapName: "Nuke",
             videoNumber: "71",
-            name: "71 Nuke Smoke Leftside ramp from secret\n",
+            name: "71 Nuke Smoke Leftside ramp from secret",
             videoUrl: "https://www.youtube.com/watch?v=QrqST_-eCZQ",
             type : {
                 isSmoke: true,
@@ -1401,12 +1323,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 1
         },
         {
             mapName: "Nuke",
             videoNumber: "72",
-            name: "72 Nuke Molotov SecretStair FromYard\n",
+            name: "72 Nuke Molotov SecretStair FromYard",
             videoUrl: "https://www.youtube.com/watch?v=TAOmFm6eg-A",
             type : {
                 isSmoke: false,
@@ -1427,12 +1349,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Nuke",
             videoNumber: "73",
-            name: "73 Nuke Molotov Vent From Secret\n",
+            name: "73 Nuke Molotov Vent From Secret",
             videoUrl: "https://www.youtube.com/watch?v=kM3dNQ75wjw",
             type : {
                 isSmoke: false,
@@ -1453,12 +1375,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: true
             },
-            utilityValue : 5
+            utilityValue : 1
         },
         {
             mapName: "Nuke",
             videoNumber: "75",
-            name: "75 Nuke Smoke main from lobby\n",
+            name: "75 Nuke Smoke main from lobby",
             videoUrl: "https://www.youtube.com/watch?v=w-fue6Brrws",
             type : {
                 isSmoke: true,
@@ -1482,35 +1404,9 @@ export const VideoConfig = {
             utilityValue : 5
         },
         {
-            mapName: "Nuke",
-            videoNumber: "76",
-            name: "76 Nuke Execute Ramp\n",
-            videoUrl: "https://www.youtube.com/watch?v=-A69ZzHE44I",
-            type : {
-                isSmoke: false,
-                isFlash: false,
-                isMolotov: false,
-                isGrenade: false,
-                isStrat: true
-            },
-            team : {
-                isCT: false,
-                isT: true,
-            },
-            location : {
-                isA: false,
-                isMid: false,
-                isB: false,
-                isYard: false,
-                isRamp: true,
-                isVent: false
-            },
-            utilityValue : 5
-        },
-        {
             mapName: "Mirage",
             videoNumber: "77",
-            name: "77 Mirage Smoke topmid from CTSpawn\n",
+            name: "77 Mirage Smoke topmid from CTSpawn",
             videoUrl: "https://www.youtube.com/watch?v=PY1hbWH_t6w",
             type : {
                 isSmoke: true,
@@ -1531,12 +1427,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Mirage",
             videoNumber: "78",
-            name: "78 Mirage Smoke connector from mid\n",
+            name: "78 Mirage Smoke connector from mid",
             videoUrl: "https://www.youtube.com/watch?v=zFJN4LJH2G4",
             type : {
                 isSmoke: true,
@@ -1557,12 +1453,12 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
             videoNumber: "79",
-            name: "79 Mirage 1-3-1 strat\n",
+            name: "79 Mirage 1-3-1 strat",
             videoUrl: "https://www.youtube.com/watch?v=T9KAOFbJzp4",
             type : {
                 isSmoke: false,
@@ -1635,7 +1531,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
@@ -1666,7 +1562,7 @@ export const VideoConfig = {
         {
             mapName: "Inferno",
             videoNumber: "83",
-            name: "83 Inferno Smoke Pit From Long\n",
+            name: "83 Inferno Smoke Pit From Long",
             videoUrl: "https://www.youtube.com/watch?v=nGwL_iZ597o",
             type : {
                 isSmoke: true,
@@ -1687,7 +1583,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Mirage",
@@ -1713,7 +1609,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
@@ -1739,7 +1635,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Inferno",
@@ -1765,7 +1661,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
@@ -1791,7 +1687,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
@@ -1817,7 +1713,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
@@ -1843,7 +1739,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
@@ -1869,7 +1765,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Inferno",
@@ -1895,7 +1791,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
@@ -1947,7 +1843,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Inferno",
@@ -1999,7 +1895,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Dust2",
@@ -2025,7 +1921,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Dust2",
@@ -2051,7 +1947,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Dust2",
@@ -2155,7 +2051,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Dust2",
@@ -2181,7 +2077,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Nuke",
@@ -2311,7 +2207,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Anubis",
@@ -2363,7 +2259,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Anubis",
@@ -2389,7 +2285,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Anubis",
@@ -2415,7 +2311,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Anubis",
@@ -2545,7 +2441,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Anubis",
@@ -2571,7 +2467,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Anubis",
@@ -2597,7 +2493,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Anubis",
@@ -2623,7 +2519,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Anubis",
@@ -2675,7 +2571,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Anubis",
@@ -2701,7 +2597,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Anubis",
@@ -2727,7 +2623,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
         {
             mapName: "Dust2",
@@ -2805,7 +2701,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 3
         },
         {
             mapName: "Dust2",
@@ -2831,7 +2727,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Dust2",
@@ -2857,7 +2753,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Overpass",
@@ -2883,7 +2779,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 2
         },
     ]
 };
