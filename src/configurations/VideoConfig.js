@@ -778,7 +778,7 @@ export const VideoConfig = {
                 isRamp: false,
                 isVent: false
             },
-            utilityValue : 5
+            utilityValue : 4
         },
         {
             mapName: "Mirage",
