@@ -5,6 +5,7 @@ import CTSrc from "../images/ct.png";
 import TSrc from "../images/t.png";
 import StratSrc from "../images/strats.png";
 import SmokeSrc from "../images/smoke.PNG";
+import SmokeIconSrc from "../images/smokeicon.PNG";
 import FlashSrc from "../images/flash.PNG";
 import MolotovSrc from "../images/molotov.jpg";
 import GrenadeSrc from "../images/grenade.PNG";
@@ -31,7 +32,12 @@ const MapPageSidebar = (props) => {
         setBVisible,
         setYardVisible,
         setRampVisible,
-        setVentVisible
+        setVentVisible,
+        setValueOneVisible,
+        setValueTwoVisible,
+        setValueThreeVisible,
+        setValueFourVisible,
+        setValueFiveVisible
     } = useContext(FilterContext);
 
     const [searchContentValue, setSearchContentValue] = useState('');
@@ -48,6 +54,11 @@ const MapPageSidebar = (props) => {
     const [isYardChecked, setYardChecked] = useState(false);
     const [isRampChecked, setRampChecked] = useState(false);
     const [isVentChecked, setVentChecked] = useState(false);
+    const [isValueOneChecked, setValueOneChecked] = useState(false);
+    const [isValueTwoChecked, setValueTwoChecked] = useState(false);
+    const [isValueThreeChecked, setValueThreeChecked] = useState(false);
+    const [isValueFourChecked, setValueFourChecked] = useState(false);
+    const [isValueFiveChecked, setValueFiveChecked] = useState(false);
 
     return (
         <div className="sideBar">
@@ -59,13 +70,13 @@ const MapPageSidebar = (props) => {
                     }}
                     value={searchContentValue}
                     type="text"
-                    placeholder="Search"
+                    placeholder="Search by video name"
                     className="mr-sm-2"
                 />
             </div>
             <table>
                 <tbody>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td><FilterImage imageSrc={SmokeSrc} imageAlt="Smoke"/></td>
                         <td><h3>Smoke</h3></td>
                         <td className="paddingLeft">
@@ -79,7 +90,7 @@ const MapPageSidebar = (props) => {
                             />
                         </td>
                     </tr>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td><FilterImage imageSrc={FlashSrc} imageAlt="Flash"/></td>
                         <td><h3>Flash</h3></td>
                         <td className="paddingLeft">
@@ -93,7 +104,7 @@ const MapPageSidebar = (props) => {
                             />
                         </td>
                     </tr>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td><FilterImage imageSrc={MolotovSrc} imageAlt="Molotov"/></td>
                         <td><h3>Molotov</h3></td>
                         <td className="paddingLeft">
@@ -107,7 +118,7 @@ const MapPageSidebar = (props) => {
                             />
                         </td>
                     </tr>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td><FilterImage imageSrc={GrenadeSrc} imageAlt="Grenade"/></td>
                         <td><h3>Grenade</h3></td>
                         <td className="paddingLeft">
@@ -121,7 +132,7 @@ const MapPageSidebar = (props) => {
                             />
                         </td>
                     </tr>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td><FilterImage imageSrc={StratSrc} imageAlt="Strat"/></td>
                         <td><h3>Strat</h3></td>
                         <td className="paddingLeft">
@@ -140,7 +151,7 @@ const MapPageSidebar = (props) => {
                             <br/><br/>
                         </td>
                     </tr>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td><FilterImage imageSrc={CTSrc} imageAlt="CT"/></td>
                         <td><h3>CT</h3></td>
                         <td className="paddingLeft">
@@ -154,7 +165,7 @@ const MapPageSidebar = (props) => {
                             />
                         </td>
                     </tr>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td><FilterImage imageSrc={TSrc} imageAlt="T"/></td>
                         <td><h3>T</h3></td>
                         <td className="paddingLeft">
@@ -173,7 +184,7 @@ const MapPageSidebar = (props) => {
                             <br/><br/>
                         </td>
                     </tr>
-                    <tr>
+                    <tr className="grid-container-filter-table">
                         <td></td>
                         <td><h3>A</h3></td>
                         <td className="paddingLeft">
@@ -188,7 +199,7 @@ const MapPageSidebar = (props) => {
                         </td>
                     </tr>
                     {locationConfig.maps[props.mapName].locationMidExists &&
-                        <tr>
+                        <tr className="grid-container-filter-table">
                             <td></td>
                             <td><h3>Mid</h3></td>
                             <td className="paddingLeft">
@@ -204,7 +215,7 @@ const MapPageSidebar = (props) => {
                         </tr>
                     }
                     {locationConfig.maps[props.mapName].locationBExists &&
-                        <tr>
+                        <tr className="grid-container-filter-table">
                             <td></td>
                             <td><h3>B</h3></td>
                             <td className="paddingLeft">
@@ -220,7 +231,7 @@ const MapPageSidebar = (props) => {
                         </tr>
                     }
                     {locationConfig.maps[props.mapName].locationYardExists &&
-                        <tr>
+                        <tr className="grid-container-filter-table">
                             <td></td>
                             <td><h3>Yard</h3></td>
                             <td className="paddingLeft">
@@ -236,7 +247,7 @@ const MapPageSidebar = (props) => {
                         </tr>
                     }
                     {locationConfig.maps[props.mapName].locationRampExists &&
-                        <tr>
+                        <tr className="grid-container-filter-table">
                             <td></td>
                             <td><h3>Ramp</h3></td>
                             <td className="paddingLeft">
@@ -252,7 +263,7 @@ const MapPageSidebar = (props) => {
                         </tr>
                     }
                     {locationConfig.maps[props.mapName].locationVentExists &&
-                        <tr>
+                        <tr className="grid-container-filter-table">
                             <td></td>
                             <td><h3>Vent</h3></td>
                             <td className="paddingLeft">
@@ -267,6 +278,106 @@ const MapPageSidebar = (props) => {
                             </td>
                         </tr>
                     }
+                    <tr>
+                        <td>
+                            <br/><br/>
+                        </td>
+                    </tr>
+                    <tr className="grid-container-filter-table">
+                        <td></td>
+                        <td><h2>Value</h2></td>
+                        <td></td>
+                    </tr>
+                    <tr className="grid-container-filter-table">
+                        <td></td>
+                        <td className="grid-container-smoke-icons">
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                        </td>
+                        <td className="paddingLeft">
+                            <Checkbox
+                                toggle
+                                checked={isValueFiveChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setValueFiveChecked(checkBoxProps.checked);
+                                    setValueFiveVisible(checkBoxProps.checked);
+                                }}
+                            />
+                        </td>
+                    </tr>
+                    <tr className="grid-container-filter-table">
+                        <td></td>
+                        <td className="grid-container-smoke-icons">
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                        </td>
+                        <td className="paddingLeft">
+                            <Checkbox
+                                toggle
+                                checked={isValueFourChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setValueFourChecked(checkBoxProps.checked);
+                                    setValueFourVisible(checkBoxProps.checked);
+                                }}
+                            />
+                        </td>
+                    </tr>
+                    <tr className="grid-container-filter-table">
+                        <td></td>
+                        <td className="grid-container-smoke-icons">
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                        </td>
+                        <td className="paddingLeft">
+                            <Checkbox
+                                toggle
+                                checked={isValueThreeChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setValueThreeChecked(checkBoxProps.checked);
+                                    setValueThreeVisible(checkBoxProps.checked);
+                                }}
+                            />
+                        </td>
+                    </tr>
+                    <tr className="grid-container-filter-table">
+                        <td></td>
+                        <td className="grid-container-smoke-icons">
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                        </td>
+                        <td className="paddingLeft">
+                            <Checkbox
+                                toggle
+                                checked={isValueTwoChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setValueTwoChecked(checkBoxProps.checked);
+                                    setValueTwoVisible(checkBoxProps.checked);
+                                }}
+                            />
+                        </td>
+                    </tr>
+                    <tr className="grid-container-filter-table">
+                        <td></td>
+                        <td className="grid-container-smoke-icons">
+                            <FilterImage imageSrc={SmokeIconSrc} imageAlt="SmokeIcon"/>
+                        </td>
+                        <td className="paddingLeft">
+                            <Checkbox
+                                toggle
+                                checked={isValueOneChecked}
+                                onChange={(formEvent, checkBoxProps) => {
+                                    setValueOneChecked(checkBoxProps.checked);
+                                    setValueOneVisible(checkBoxProps.checked);
+                                }}
+                            />
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div className="clearButton">
@@ -301,6 +412,16 @@ const MapPageSidebar = (props) => {
                         setRampVisible(false);
                         setVentChecked(false);
                         setVentVisible(false);
+                        setValueOneChecked(false);
+                        setValueOneVisible(false);
+                        setValueTwoChecked(false);
+                        setValueTwoVisible(false);
+                        setValueThreeChecked(false);
+                        setValueThreeVisible(false);
+                        setValueFourChecked(false);
+                        setValueFourVisible(false);
+                        setValueFiveChecked(false);
+                        setValueFiveVisible(false);
                     }}>
 
                     Clear filter

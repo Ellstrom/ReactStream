@@ -21,7 +21,12 @@ const ContentGrid = (props) => {
         isBVisible,
         isYardVisible,
         isRampVisible,
-        isVentVisible
+        isVentVisible,
+        isValueOneVisible,
+        isValueTwoVisible,
+        isValueThreeVisible,
+        isValueFourVisible,
+        isValueFiveVisible,
     } = useContext(FilterContext);
 
     const videoList = [];
@@ -59,7 +64,8 @@ const ContentGrid = (props) => {
             && mapNameMatches(video.mapName)
             && utilityMatches(video.type)
             && teamMatches(video.team)
-            && locationMatches(video.location));
+            && locationMatches(video.location)
+            && utilityValueMatches(video.utilityValue));
     }
 
     function mapNameMatches(mapName){
@@ -104,6 +110,19 @@ const ContentGrid = (props) => {
                 && !isYardVisible
                 && !isRampVisible
                 && !isVentVisible));
+    }
+
+    function utilityValueMatches(utilityValue){
+        return !!(((utilityValue === 1 && isValueOneVisible)
+            || (utilityValue === 2 && isValueTwoVisible)
+            || (utilityValue === 3 && isValueThreeVisible)
+            || (utilityValue === 4 && isValueFourVisible))
+            || (utilityValue === 5 && isValueFiveVisible)
+            || (!isValueOneVisible
+                && !isValueTwoVisible
+                && !isValueThreeVisible
+                && !isValueFourVisible
+                && !isValueFiveVisible));
     }
 
 };

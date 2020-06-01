@@ -20,6 +20,11 @@ const MapPage = ({mapName, mapSrc}) => {
     const [isYardVisible, setYardVisible] = useState(false);
     const [isRampVisible, setRampVisible] = useState(false);
     const [isVentVisible, setVentVisible] = useState(false);
+    const [isValueOneVisible, setValueOneVisible] = useState(false);
+    const [isValueTwoVisible, setValueTwoVisible] = useState(false);
+    const [isValueThreeVisible, setValueThreeVisible] = useState(false);
+    const [isValueFourVisible, setValueFourVisible] = useState(false);
+    const [isValueFiveVisible, setValueFiveVisible] = useState(false);
 
     const providerValue = useMemo(() => (
             {
@@ -37,6 +42,11 @@ const MapPage = ({mapName, mapSrc}) => {
                 isYardVisible,
                 isRampVisible,
                 isVentVisible,
+                isValueOneVisible,
+                isValueTwoVisible,
+                isValueThreeVisible,
+                isValueFourVisible,
+                isValueFiveVisible,
                 setSearchContent,
                 setSmokeVisible,
                 setFlashVisible,
@@ -50,7 +60,12 @@ const MapPage = ({mapName, mapSrc}) => {
                 setBVisible,
                 setYardVisible,
                 setRampVisible,
-                setVentVisible
+                setVentVisible,
+                setValueOneVisible,
+                setValueTwoVisible,
+                setValueThreeVisible,
+                setValueFourVisible,
+                setValueFiveVisible
             }
         ),
         [
@@ -68,6 +83,11 @@ const MapPage = ({mapName, mapSrc}) => {
             isYardVisible,
             isRampVisible,
             isVentVisible,
+            isValueOneVisible,
+            isValueTwoVisible,
+            isValueThreeVisible,
+            isValueFourVisible,
+            isValueFiveVisible,
             setSearchContent,
             setSmokeVisible,
             setFlashVisible,
@@ -81,7 +101,12 @@ const MapPage = ({mapName, mapSrc}) => {
             setBVisible,
             setYardVisible,
             setRampVisible,
-            setVentVisible
+            setVentVisible,
+            setValueOneVisible,
+            setValueTwoVisible,
+            setValueThreeVisible,
+            setValueFourVisible,
+            setValueFiveVisible
         ]
     );
 

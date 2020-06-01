@@ -98,6 +98,17 @@
     padding: 10px;
 }
 
+.grid-container-smoke-icons {
+    display: grid;
+    grid-template-columns: 25px 25px 25px 25px 25px;
+}
+
+.grid-container-filter-table {
+    display: grid;
+    grid-template-columns: 30px 110px auto;
+    grid-column-gap: 15px;
+}
+
 .grid-container-map-page {
     display: grid;
     grid-template-columns: 300px auto;
