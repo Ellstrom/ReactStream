@@ -21,7 +21,7 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "deploy": "react-scripts build && aws s3 sync build/ s3://ellstream.com",
     "test": "react-scripts test",
