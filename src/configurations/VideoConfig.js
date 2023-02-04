@@ -2211,32 +2211,6 @@ export const VideoConfig = {
         },
         {
             mapName: "Anubis",
-            videoNumber: "116",
-            name: "116 Anubis Smoke leftside B",
-            videoUrl: "https://www.youtube.com/watch?v=f3ir1gtOCM0",
-            type : {
-                isSmoke: true,
-                isFlash: false,
-                isMolotov: false,
-                isGrenade: false,
-                isStrat: false
-            },
-            team : {
-                isCT: false,
-                isT: true,
-            },
-            location : {
-                isA: false,
-                isMid: false,
-                isB: true,
-                isYard: false,
-                isRamp: false,
-                isVent: false
-            },
-            utilityValue : 5
-        },
-        {
-            mapName: "Anubis",
             videoNumber: "117",
             name: "117 Anubis Smoke backside mid",
             videoUrl: "https://www.youtube.com/watch?v=kqzMwvnUtuo",
